@@ -1,0 +1,205 @@
+\hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator}{}\section{Model\+Description\+Generator}
+\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator}\index{Model\+Description\+Generator@{Model\+Description\+Generator}}
+
+
+Generates model descriptions for given types.  
+
+
+\subsection*{Métodos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a8bb9d53927e07e7e5a9e24cb692e52db}{Model\+Description\+Generator} (Http\+Configuration config)
+\item 
+\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescription}{Model\+Description} \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_ac19c99af386f86f13717a447e965f9d7}{Get\+Or\+Create\+Model\+Description} (Type model\+Type)
+\end{DoxyCompactItemize}
+\subsection*{Propriedades}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfaceApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1IModelDocumentationProvider}{I\+Model\+Documentation\+Provider} \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a4652be127f17b1d03648642fa509968c}{Documentation\+Provider}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Dictionary$<$ string, \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescription}{Model\+Description} $>$ \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a3132a32205bd0f5029c2a01ab8c29e64}{Generated\+Models}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Métodos Privados}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a64f78a7390688c87d31a887a9836beb4}{Create\+Default\+Documentation} (Type type)
+\item 
+void \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_ac38e76f941bb03e6602ec01872eaaa47}{Generate\+Annotations} (Member\+Info property, \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ParameterDescription}{Parameter\+Description} property\+Model)
+\item 
+\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1CollectionModelDescription}{Collection\+Model\+Description} \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_aa65206c5e43db1c9d4c375539496f72d}{Generate\+Collection\+Model\+Description} (Type model\+Type, Type element\+Type)
+\item 
+\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescription}{Model\+Description} \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a3d6912f5ad147d7d6683fba5d473a0ef}{Generate\+Complex\+Type\+Model\+Description} (Type model\+Type)
+\item 
+\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1DictionaryModelDescription}{Dictionary\+Model\+Description} \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_ad8bba1e2e53b9d38faea81ca34b9ce92}{Generate\+Dictionary\+Model\+Description} (Type model\+Type, Type key\+Type, Type value\+Type)
+\item 
+\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1EnumTypeModelDescription}{Enum\+Type\+Model\+Description} \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a109bbcef4577be599414712bd9c04418}{Generate\+Enum\+Type\+Model\+Description} (Type model\+Type)
+\item 
+\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1KeyValuePairModelDescription}{Key\+Value\+Pair\+Model\+Description} \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a529f7a95c1863412ca1613c3cece0dc8}{Generate\+Key\+Value\+Pair\+Model\+Description} (Type model\+Type, Type key\+Type, Type value\+Type)
+\item 
+\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescription}{Model\+Description} \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_aa450e2d5fb6e71f7e40805ce495b18ab}{Generate\+Simple\+Type\+Model\+Description} (Type model\+Type)
+\end{DoxyCompactItemize}
+\subsection*{Métodos Privados Estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static string \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a268cc276ed084ff82617982818a8fc11}{Get\+Member\+Name} (Member\+Info member, bool has\+Data\+Contract\+Attribute)
+\item 
+static bool \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a4002b466b6f40e9127162ccf3a2bd49d}{Should\+Display\+Member} (Member\+Info member, bool has\+Data\+Contract\+Attribute)
+\end{DoxyCompactItemize}
+\subsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+Lazy$<$ \hyperlink{interfaceApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1IModelDocumentationProvider}{I\+Model\+Documentation\+Provider} $>$ \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_ac6c66f56f0e7953a9ca3d1b25394a922}{\+\_\+documentation\+Provider}
+\item 
+readonly I\+Dictionary$<$ Type, Func$<$ object, string $>$ $>$ \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a8ff972f20473e943bcc5a435cd8921dc}{Annotation\+Text\+Generator}
+\item 
+readonly I\+Dictionary$<$ Type, string $>$ \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a439e9d56d8dd09e116c825d3f0f6afe7}{Default\+Type\+Documentation}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+Generates model descriptions for given types. 
+
+
+
+\subsection{Construtores \& Destrutores}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a8bb9d53927e07e7e5a9e24cb692e52db}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a8bb9d53927e07e7e5a9e24cb692e52db}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}!Model\+Description\+Generator@{Model\+Description\+Generator}}
+\index{Model\+Description\+Generator@{Model\+Description\+Generator}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}}
+\subsubsection{\texorpdfstring{Model\+Description\+Generator()}{ModelDescriptionGenerator()}}
+{\footnotesize\ttfamily \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator}{Model\+Description\+Generator} (\begin{DoxyParamCaption}\item[{Http\+Configuration}]{config }\end{DoxyParamCaption})}
+
+
+
+\subsection{Métodos}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a64f78a7390688c87d31a887a9836beb4}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a64f78a7390688c87d31a887a9836beb4}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}!Create\+Default\+Documentation@{Create\+Default\+Documentation}}
+\index{Create\+Default\+Documentation@{Create\+Default\+Documentation}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}}
+\subsubsection{\texorpdfstring{Create\+Default\+Documentation()}{CreateDefaultDocumentation()}}
+{\footnotesize\ttfamily string Create\+Default\+Documentation (\begin{DoxyParamCaption}\item[{Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_ac38e76f941bb03e6602ec01872eaaa47}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_ac38e76f941bb03e6602ec01872eaaa47}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}!Generate\+Annotations@{Generate\+Annotations}}
+\index{Generate\+Annotations@{Generate\+Annotations}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}}
+\subsubsection{\texorpdfstring{Generate\+Annotations()}{GenerateAnnotations()}}
+{\footnotesize\ttfamily void Generate\+Annotations (\begin{DoxyParamCaption}\item[{Member\+Info}]{property,  }\item[{\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ParameterDescription}{Parameter\+Description}}]{property\+Model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_aa65206c5e43db1c9d4c375539496f72d}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_aa65206c5e43db1c9d4c375539496f72d}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}!Generate\+Collection\+Model\+Description@{Generate\+Collection\+Model\+Description}}
+\index{Generate\+Collection\+Model\+Description@{Generate\+Collection\+Model\+Description}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}}
+\subsubsection{\texorpdfstring{Generate\+Collection\+Model\+Description()}{GenerateCollectionModelDescription()}}
+{\footnotesize\ttfamily \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1CollectionModelDescription}{Collection\+Model\+Description} Generate\+Collection\+Model\+Description (\begin{DoxyParamCaption}\item[{Type}]{model\+Type,  }\item[{Type}]{element\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a3d6912f5ad147d7d6683fba5d473a0ef}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a3d6912f5ad147d7d6683fba5d473a0ef}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}!Generate\+Complex\+Type\+Model\+Description@{Generate\+Complex\+Type\+Model\+Description}}
+\index{Generate\+Complex\+Type\+Model\+Description@{Generate\+Complex\+Type\+Model\+Description}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}}
+\subsubsection{\texorpdfstring{Generate\+Complex\+Type\+Model\+Description()}{GenerateComplexTypeModelDescription()}}
+{\footnotesize\ttfamily \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescription}{Model\+Description} Generate\+Complex\+Type\+Model\+Description (\begin{DoxyParamCaption}\item[{Type}]{model\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_ad8bba1e2e53b9d38faea81ca34b9ce92}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_ad8bba1e2e53b9d38faea81ca34b9ce92}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}!Generate\+Dictionary\+Model\+Description@{Generate\+Dictionary\+Model\+Description}}
+\index{Generate\+Dictionary\+Model\+Description@{Generate\+Dictionary\+Model\+Description}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}}
+\subsubsection{\texorpdfstring{Generate\+Dictionary\+Model\+Description()}{GenerateDictionaryModelDescription()}}
+{\footnotesize\ttfamily \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1DictionaryModelDescription}{Dictionary\+Model\+Description} Generate\+Dictionary\+Model\+Description (\begin{DoxyParamCaption}\item[{Type}]{model\+Type,  }\item[{Type}]{key\+Type,  }\item[{Type}]{value\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a109bbcef4577be599414712bd9c04418}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a109bbcef4577be599414712bd9c04418}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}!Generate\+Enum\+Type\+Model\+Description@{Generate\+Enum\+Type\+Model\+Description}}
+\index{Generate\+Enum\+Type\+Model\+Description@{Generate\+Enum\+Type\+Model\+Description}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}}
+\subsubsection{\texorpdfstring{Generate\+Enum\+Type\+Model\+Description()}{GenerateEnumTypeModelDescription()}}
+{\footnotesize\ttfamily \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1EnumTypeModelDescription}{Enum\+Type\+Model\+Description} Generate\+Enum\+Type\+Model\+Description (\begin{DoxyParamCaption}\item[{Type}]{model\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a529f7a95c1863412ca1613c3cece0dc8}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a529f7a95c1863412ca1613c3cece0dc8}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}!Generate\+Key\+Value\+Pair\+Model\+Description@{Generate\+Key\+Value\+Pair\+Model\+Description}}
+\index{Generate\+Key\+Value\+Pair\+Model\+Description@{Generate\+Key\+Value\+Pair\+Model\+Description}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}}
+\subsubsection{\texorpdfstring{Generate\+Key\+Value\+Pair\+Model\+Description()}{GenerateKeyValuePairModelDescription()}}
+{\footnotesize\ttfamily \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1KeyValuePairModelDescription}{Key\+Value\+Pair\+Model\+Description} Generate\+Key\+Value\+Pair\+Model\+Description (\begin{DoxyParamCaption}\item[{Type}]{model\+Type,  }\item[{Type}]{key\+Type,  }\item[{Type}]{value\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_aa450e2d5fb6e71f7e40805ce495b18ab}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_aa450e2d5fb6e71f7e40805ce495b18ab}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}!Generate\+Simple\+Type\+Model\+Description@{Generate\+Simple\+Type\+Model\+Description}}
+\index{Generate\+Simple\+Type\+Model\+Description@{Generate\+Simple\+Type\+Model\+Description}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}}
+\subsubsection{\texorpdfstring{Generate\+Simple\+Type\+Model\+Description()}{GenerateSimpleTypeModelDescription()}}
+{\footnotesize\ttfamily \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescription}{Model\+Description} Generate\+Simple\+Type\+Model\+Description (\begin{DoxyParamCaption}\item[{Type}]{model\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a268cc276ed084ff82617982818a8fc11}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a268cc276ed084ff82617982818a8fc11}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}!Get\+Member\+Name@{Get\+Member\+Name}}
+\index{Get\+Member\+Name@{Get\+Member\+Name}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}}
+\subsubsection{\texorpdfstring{Get\+Member\+Name()}{GetMemberName()}}
+{\footnotesize\ttfamily static string Get\+Member\+Name (\begin{DoxyParamCaption}\item[{Member\+Info}]{member,  }\item[{bool}]{has\+Data\+Contract\+Attribute }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_ac19c99af386f86f13717a447e965f9d7}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_ac19c99af386f86f13717a447e965f9d7}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}!Get\+Or\+Create\+Model\+Description@{Get\+Or\+Create\+Model\+Description}}
+\index{Get\+Or\+Create\+Model\+Description@{Get\+Or\+Create\+Model\+Description}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}}
+\subsubsection{\texorpdfstring{Get\+Or\+Create\+Model\+Description()}{GetOrCreateModelDescription()}}
+{\footnotesize\ttfamily \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescription}{Model\+Description} Get\+Or\+Create\+Model\+Description (\begin{DoxyParamCaption}\item[{Type}]{model\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a4002b466b6f40e9127162ccf3a2bd49d}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a4002b466b6f40e9127162ccf3a2bd49d}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}!Should\+Display\+Member@{Should\+Display\+Member}}
+\index{Should\+Display\+Member@{Should\+Display\+Member}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}}
+\subsubsection{\texorpdfstring{Should\+Display\+Member()}{ShouldDisplayMember()}}
+{\footnotesize\ttfamily static bool Should\+Display\+Member (\begin{DoxyParamCaption}\item[{Member\+Info}]{member,  }\item[{bool}]{has\+Data\+Contract\+Attribute }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+\subsection{Atributos}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_ac6c66f56f0e7953a9ca3d1b25394a922}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_ac6c66f56f0e7953a9ca3d1b25394a922}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}!\+\_\+documentation\+Provider@{\+\_\+documentation\+Provider}}
+\index{\+\_\+documentation\+Provider@{\+\_\+documentation\+Provider}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}}
+\subsubsection{\texorpdfstring{\+\_\+documentation\+Provider}{\_documentationProvider}}
+{\footnotesize\ttfamily Lazy$<$\hyperlink{interfaceApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1IModelDocumentationProvider}{I\+Model\+Documentation\+Provider}$>$ \+\_\+documentation\+Provider\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a8ff972f20473e943bcc5a435cd8921dc}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a8ff972f20473e943bcc5a435cd8921dc}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}!Annotation\+Text\+Generator@{Annotation\+Text\+Generator}}
+\index{Annotation\+Text\+Generator@{Annotation\+Text\+Generator}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}}
+\subsubsection{\texorpdfstring{Annotation\+Text\+Generator}{AnnotationTextGenerator}}
+{\footnotesize\ttfamily readonly I\+Dictionary$<$Type, Func$<$object, string$>$ $>$ Annotation\+Text\+Generator\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a439e9d56d8dd09e116c825d3f0f6afe7}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a439e9d56d8dd09e116c825d3f0f6afe7}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}!Default\+Type\+Documentation@{Default\+Type\+Documentation}}
+\index{Default\+Type\+Documentation@{Default\+Type\+Documentation}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}}
+\subsubsection{\texorpdfstring{Default\+Type\+Documentation}{DefaultTypeDocumentation}}
+{\footnotesize\ttfamily readonly I\+Dictionary$<$Type, string$>$ Default\+Type\+Documentation\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Valor Inicial\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{new} Dictionary<Type, string>
+        \{
+            \{ typeof(Int16), \textcolor{stringliteral}{"integer"} \},
+            \{ typeof(Int32), \textcolor{stringliteral}{"integer"} \},
+            \{ typeof(Int64), \textcolor{stringliteral}{"integer"} \},
+            \{ typeof(UInt16), \textcolor{stringliteral}{"unsigned integer"} \},
+            \{ typeof(UInt32), \textcolor{stringliteral}{"unsigned integer"} \},
+            \{ typeof(UInt64), \textcolor{stringliteral}{"unsigned integer"} \},
+            \{ typeof(Byte), \textcolor{stringliteral}{"byte"} \},
+            \{ typeof(Char), \textcolor{stringliteral}{"character"} \},
+            \{ typeof(SByte), \textcolor{stringliteral}{"signed byte"} \},
+            \{ typeof(Uri), \textcolor{stringliteral}{"URI"} \},
+            \{ typeof(Single), \textcolor{stringliteral}{"decimal number"} \},
+            \{ typeof(Double), \textcolor{stringliteral}{"decimal number"} \},
+            \{ typeof(Decimal), \textcolor{stringliteral}{"decimal number"} \},
+            \{ typeof(String), \textcolor{stringliteral}{"string"} \},
+            \{ typeof(Guid), \textcolor{stringliteral}{"globally unique identifier"} \},
+            \{ typeof(TimeSpan), \textcolor{stringliteral}{"time interval"} \},
+            \{ typeof(DateTime), \textcolor{stringliteral}{"date"} \},
+            \{ typeof(DateTimeOffset), \textcolor{stringliteral}{"date"} \},
+            \{ typeof(Boolean), \textcolor{stringliteral}{"boolean"} \},
+        \}
+\end{DoxyCode}
+
+
+\subsection{Propriedades}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a4652be127f17b1d03648642fa509968c}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a4652be127f17b1d03648642fa509968c}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}!Documentation\+Provider@{Documentation\+Provider}}
+\index{Documentation\+Provider@{Documentation\+Provider}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}}
+\subsubsection{\texorpdfstring{Documentation\+Provider}{DocumentationProvider}}
+{\footnotesize\ttfamily \hyperlink{interfaceApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1IModelDocumentationProvider}{I\+Model\+Documentation\+Provider} Documentation\+Provider\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a3132a32205bd0f5029c2a01ab8c29e64}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator_a3132a32205bd0f5029c2a01ab8c29e64}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}!Generated\+Models@{Generated\+Models}}
+\index{Generated\+Models@{Generated\+Models}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}}
+\subsubsection{\texorpdfstring{Generated\+Models}{GeneratedModels}}
+{\footnotesize\ttfamily Dictionary$<$string, \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescription}{Model\+Description}$>$ Generated\+Models\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte arquivo\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Bruno/\+Desktop/\+Api3\+Layers/\+Api3\+Layers/\+Areas/\+Help\+Page/\+Model\+Descriptions/\hyperlink{ModelDescriptionGenerator_8cs}{Model\+Description\+Generator.\+cs}\end{DoxyCompactItemize}

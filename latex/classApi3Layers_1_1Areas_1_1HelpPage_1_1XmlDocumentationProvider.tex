@@ -1,0 +1,205 @@
+\hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider}{}\section{Xml\+Documentation\+Provider}
+\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider}\index{Xml\+Documentation\+Provider@{Xml\+Documentation\+Provider}}
+
+
+A custom I\+Documentation\+Provider that reads the A\+PI documentation from an X\+ML documentation file.  
+
+
+Diagrama de Hierarquia para Xml\+Documentation\+Provider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider}
+\end{center}
+\end{figure}
+\subsection*{Métodos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_ad2a409539874ae63a8cebe23599fc468}{Xml\+Documentation\+Provider} (string document\+Path)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider}{Xml\+Documentation\+Provider} class. \end{DoxyCompactList}\item 
+string \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a6bf162425448d82a33aa596c66c807e0}{Get\+Documentation} (Http\+Controller\+Descriptor controller\+Descriptor)
+\item 
+virtual string \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_aaa833c04f0d8aecd147d9755e20106e2}{Get\+Documentation} (Http\+Action\+Descriptor action\+Descriptor)
+\item 
+virtual string \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a7222394a33fd0f7cf2117e37d7e43dc3}{Get\+Documentation} (Http\+Parameter\+Descriptor parameter\+Descriptor)
+\item 
+string \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_aa774bb352a769421583abb335a1cec8a}{Get\+Documentation} (Member\+Info member)
+\item 
+string \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_af771cd863288942e506d28447daf4f82}{Get\+Documentation} (Type type)
+\item 
+string \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a418513d2d192474340e81271a0b4ca5f}{Get\+Response\+Documentation} (Http\+Action\+Descriptor action\+Descriptor)
+\end{DoxyCompactItemize}
+\subsection*{Métodos Privados}
+\begin{DoxyCompactItemize}
+\item 
+X\+Path\+Navigator \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_ada0fcccbdb5b3153540e07182fe9179a}{Get\+Method\+Node} (Http\+Action\+Descriptor action\+Descriptor)
+\item 
+X\+Path\+Navigator \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a8db80d23eb6731ae9ed3e9f1bde27440}{Get\+Type\+Node} (Type type)
+\end{DoxyCompactItemize}
+\subsection*{Métodos Privados Estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static string \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_aa747494e379de7a28d7e26920b30488c}{Get\+Member\+Name} (Method\+Info method)
+\item 
+static string \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a0e1628e2c68deb872bb816907d1ceab1}{Get\+Tag\+Value} (X\+Path\+Navigator parent\+Node, string tag\+Name)
+\item 
+static string \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_ab7c2e772873d333e72ee649dddacc8e9}{Get\+Type\+Name} (Type type)
+\end{DoxyCompactItemize}
+\subsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+X\+Path\+Navigator \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a27bb462cb0252e12db3c94eb7cde784a}{\+\_\+document\+Navigator}
+\item 
+const string \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a495fb5f073620815f4bd9be5ac5a1c31}{Field\+Expression} = \char`\"{}/doc/members/member\mbox{[}@name=\textquotesingle{}F\+:\{0\}\textquotesingle{}\mbox{]}\char`\"{}
+\item 
+const string \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a8e2836494bbc0eef86c4200c2daaa489}{Method\+Expression} = \char`\"{}/doc/members/member\mbox{[}@name=\textquotesingle{}M\+:\{0\}\textquotesingle{}\mbox{]}\char`\"{}
+\item 
+const string \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a028743d93d156432c6d394821e2596dc}{Parameter\+Expression} = \char`\"{}param\mbox{[}@name=\textquotesingle{}\{0\}\textquotesingle{}\mbox{]}\char`\"{}
+\item 
+const string \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_ae05dc5cbd300573ef5589d577745bf33}{Property\+Expression} = \char`\"{}/doc/members/member\mbox{[}@name=\textquotesingle{}P\+:\{0\}\textquotesingle{}\mbox{]}\char`\"{}
+\item 
+const string \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_ae421a9b71e4e2b01b648d002549328f7}{Type\+Expression} = \char`\"{}/doc/members/member\mbox{[}@name=\textquotesingle{}T\+:\{0\}\textquotesingle{}\mbox{]}\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+A custom I\+Documentation\+Provider that reads the A\+PI documentation from an X\+ML documentation file. 
+
+
+
+\subsection{Construtores \& Destrutores}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_ad2a409539874ae63a8cebe23599fc468}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_ad2a409539874ae63a8cebe23599fc468}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}!Xml\+Documentation\+Provider@{Xml\+Documentation\+Provider}}
+\index{Xml\+Documentation\+Provider@{Xml\+Documentation\+Provider}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}}
+\subsubsection{\texorpdfstring{Xml\+Documentation\+Provider()}{XmlDocumentationProvider()}}
+{\footnotesize\ttfamily \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider}{Xml\+Documentation\+Provider} (\begin{DoxyParamCaption}\item[{string}]{document\+Path }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider}{Xml\+Documentation\+Provider} class. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em document\+Path} & The physical path to X\+ML document.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Métodos}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a6bf162425448d82a33aa596c66c807e0}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a6bf162425448d82a33aa596c66c807e0}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}!Get\+Documentation@{Get\+Documentation}}
+\index{Get\+Documentation@{Get\+Documentation}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}}
+\subsubsection{\texorpdfstring{Get\+Documentation()}{GetDocumentation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily string Get\+Documentation (\begin{DoxyParamCaption}\item[{Http\+Controller\+Descriptor}]{controller\+Descriptor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_aaa833c04f0d8aecd147d9755e20106e2}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_aaa833c04f0d8aecd147d9755e20106e2}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}!Get\+Documentation@{Get\+Documentation}}
+\index{Get\+Documentation@{Get\+Documentation}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}}
+\subsubsection{\texorpdfstring{Get\+Documentation()}{GetDocumentation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily virtual string Get\+Documentation (\begin{DoxyParamCaption}\item[{Http\+Action\+Descriptor}]{action\+Descriptor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a7222394a33fd0f7cf2117e37d7e43dc3}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a7222394a33fd0f7cf2117e37d7e43dc3}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}!Get\+Documentation@{Get\+Documentation}}
+\index{Get\+Documentation@{Get\+Documentation}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}}
+\subsubsection{\texorpdfstring{Get\+Documentation()}{GetDocumentation()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily virtual string Get\+Documentation (\begin{DoxyParamCaption}\item[{Http\+Parameter\+Descriptor}]{parameter\+Descriptor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_aa774bb352a769421583abb335a1cec8a}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_aa774bb352a769421583abb335a1cec8a}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}!Get\+Documentation@{Get\+Documentation}}
+\index{Get\+Documentation@{Get\+Documentation}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}}
+\subsubsection{\texorpdfstring{Get\+Documentation()}{GetDocumentation()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily string Get\+Documentation (\begin{DoxyParamCaption}\item[{Member\+Info}]{member }\end{DoxyParamCaption})}
+
+
+
+Implementa \hyperlink{interfaceApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1IModelDocumentationProvider_aa774bb352a769421583abb335a1cec8a}{I\+Model\+Documentation\+Provider}.
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_af771cd863288942e506d28447daf4f82}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_af771cd863288942e506d28447daf4f82}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}!Get\+Documentation@{Get\+Documentation}}
+\index{Get\+Documentation@{Get\+Documentation}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}}
+\subsubsection{\texorpdfstring{Get\+Documentation()}{GetDocumentation()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily string Get\+Documentation (\begin{DoxyParamCaption}\item[{Type}]{type }\end{DoxyParamCaption})}
+
+
+
+Implementa \hyperlink{interfaceApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1IModelDocumentationProvider_af771cd863288942e506d28447daf4f82}{I\+Model\+Documentation\+Provider}.
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_aa747494e379de7a28d7e26920b30488c}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_aa747494e379de7a28d7e26920b30488c}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}!Get\+Member\+Name@{Get\+Member\+Name}}
+\index{Get\+Member\+Name@{Get\+Member\+Name}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}}
+\subsubsection{\texorpdfstring{Get\+Member\+Name()}{GetMemberName()}}
+{\footnotesize\ttfamily static string Get\+Member\+Name (\begin{DoxyParamCaption}\item[{Method\+Info}]{method }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_ada0fcccbdb5b3153540e07182fe9179a}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_ada0fcccbdb5b3153540e07182fe9179a}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}!Get\+Method\+Node@{Get\+Method\+Node}}
+\index{Get\+Method\+Node@{Get\+Method\+Node}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}}
+\subsubsection{\texorpdfstring{Get\+Method\+Node()}{GetMethodNode()}}
+{\footnotesize\ttfamily X\+Path\+Navigator Get\+Method\+Node (\begin{DoxyParamCaption}\item[{Http\+Action\+Descriptor}]{action\+Descriptor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a418513d2d192474340e81271a0b4ca5f}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a418513d2d192474340e81271a0b4ca5f}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}!Get\+Response\+Documentation@{Get\+Response\+Documentation}}
+\index{Get\+Response\+Documentation@{Get\+Response\+Documentation}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}}
+\subsubsection{\texorpdfstring{Get\+Response\+Documentation()}{GetResponseDocumentation()}}
+{\footnotesize\ttfamily string Get\+Response\+Documentation (\begin{DoxyParamCaption}\item[{Http\+Action\+Descriptor}]{action\+Descriptor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a0e1628e2c68deb872bb816907d1ceab1}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a0e1628e2c68deb872bb816907d1ceab1}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}!Get\+Tag\+Value@{Get\+Tag\+Value}}
+\index{Get\+Tag\+Value@{Get\+Tag\+Value}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}}
+\subsubsection{\texorpdfstring{Get\+Tag\+Value()}{GetTagValue()}}
+{\footnotesize\ttfamily static string Get\+Tag\+Value (\begin{DoxyParamCaption}\item[{X\+Path\+Navigator}]{parent\+Node,  }\item[{string}]{tag\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_ab7c2e772873d333e72ee649dddacc8e9}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_ab7c2e772873d333e72ee649dddacc8e9}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}!Get\+Type\+Name@{Get\+Type\+Name}}
+\index{Get\+Type\+Name@{Get\+Type\+Name}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}}
+\subsubsection{\texorpdfstring{Get\+Type\+Name()}{GetTypeName()}}
+{\footnotesize\ttfamily static string Get\+Type\+Name (\begin{DoxyParamCaption}\item[{Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a8db80d23eb6731ae9ed3e9f1bde27440}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a8db80d23eb6731ae9ed3e9f1bde27440}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}!Get\+Type\+Node@{Get\+Type\+Node}}
+\index{Get\+Type\+Node@{Get\+Type\+Node}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}}
+\subsubsection{\texorpdfstring{Get\+Type\+Node()}{GetTypeNode()}}
+{\footnotesize\ttfamily X\+Path\+Navigator Get\+Type\+Node (\begin{DoxyParamCaption}\item[{Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Atributos}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a27bb462cb0252e12db3c94eb7cde784a}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a27bb462cb0252e12db3c94eb7cde784a}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}!\+\_\+document\+Navigator@{\+\_\+document\+Navigator}}
+\index{\+\_\+document\+Navigator@{\+\_\+document\+Navigator}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}}
+\subsubsection{\texorpdfstring{\+\_\+document\+Navigator}{\_documentNavigator}}
+{\footnotesize\ttfamily X\+Path\+Navigator \+\_\+document\+Navigator\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a495fb5f073620815f4bd9be5ac5a1c31}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a495fb5f073620815f4bd9be5ac5a1c31}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}!Field\+Expression@{Field\+Expression}}
+\index{Field\+Expression@{Field\+Expression}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}}
+\subsubsection{\texorpdfstring{Field\+Expression}{FieldExpression}}
+{\footnotesize\ttfamily const string Field\+Expression = \char`\"{}/doc/members/member\mbox{[}@name=\textquotesingle{}F\+:\{0\}\textquotesingle{}\mbox{]}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a8e2836494bbc0eef86c4200c2daaa489}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a8e2836494bbc0eef86c4200c2daaa489}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}!Method\+Expression@{Method\+Expression}}
+\index{Method\+Expression@{Method\+Expression}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}}
+\subsubsection{\texorpdfstring{Method\+Expression}{MethodExpression}}
+{\footnotesize\ttfamily const string Method\+Expression = \char`\"{}/doc/members/member\mbox{[}@name=\textquotesingle{}M\+:\{0\}\textquotesingle{}\mbox{]}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a028743d93d156432c6d394821e2596dc}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_a028743d93d156432c6d394821e2596dc}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}!Parameter\+Expression@{Parameter\+Expression}}
+\index{Parameter\+Expression@{Parameter\+Expression}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}}
+\subsubsection{\texorpdfstring{Parameter\+Expression}{ParameterExpression}}
+{\footnotesize\ttfamily const string Parameter\+Expression = \char`\"{}param\mbox{[}@name=\textquotesingle{}\{0\}\textquotesingle{}\mbox{]}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_ae05dc5cbd300573ef5589d577745bf33}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_ae05dc5cbd300573ef5589d577745bf33}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}!Property\+Expression@{Property\+Expression}}
+\index{Property\+Expression@{Property\+Expression}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}}
+\subsubsection{\texorpdfstring{Property\+Expression}{PropertyExpression}}
+{\footnotesize\ttfamily const string Property\+Expression = \char`\"{}/doc/members/member\mbox{[}@name=\textquotesingle{}P\+:\{0\}\textquotesingle{}\mbox{]}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_ae421a9b71e4e2b01b648d002549328f7}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider_ae421a9b71e4e2b01b648d002549328f7}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}!Type\+Expression@{Type\+Expression}}
+\index{Type\+Expression@{Type\+Expression}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}}
+\subsubsection{\texorpdfstring{Type\+Expression}{TypeExpression}}
+{\footnotesize\ttfamily const string Type\+Expression = \char`\"{}/doc/members/member\mbox{[}@name=\textquotesingle{}T\+:\{0\}\textquotesingle{}\mbox{]}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte arquivo\+:\begin{DoxyCompactItemize}
+\item 
+Api3\+Layers/\+Areas/\+Help\+Page/\hyperlink{XmlDocumentationProvider_8cs}{Xml\+Documentation\+Provider.\+cs}\end{DoxyCompactItemize}

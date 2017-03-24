@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Api3Layers: ClientController</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="microsoft_.net_.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Api3Layers
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Esse é um projeto para testes</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceApi3Layers.html">Api3Layers</a></li><li class="navelem"><a class="el" href="namespaceApi3Layers_1_1Controllers.html">Controllers</a></li><li class="navelem"><a class="el" href="classApi3Layers_1_1Controllers_1_1ClientController.html">ClientController</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos Públicos</a> &#124;
+<a href="#pri-attribs">Atributos Privados</a> &#124;
+<a href="classApi3Layers_1_1Controllers_1_1ClientController-members.html">Lista de todos os Membros</a>  </div>
+  <div class="headertitle">
+<div class="title">ClientController</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Classe de acesso da API, utiliza o prefixo api/Client, seu acesso se da pela url/api/Client + o endpoint selecionado  
+ <a href="classApi3Layers_1_1Controllers_1_1ClientController.html#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de Hierarquia para ClientController:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classApi3Layers_1_1Controllers_1_1ClientController.png" usemap="#ClientController_map" alt=""/>
+  <map id="ClientController_map" name="ClientController_map">
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Métodos Públicos</h2></td></tr>
+<tr class="memitem:a9313f9369acc70d20109a5e2621486fd"><td class="memItemLeft" align="right" valign="top">Task&lt; HttpResponseMessage &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApi3Layers_1_1Controllers_1_1ClientController.html#a9313f9369acc70d20109a5e2621486fd">DeleteClient</a> (Client client)</td></tr>
+<tr class="memdesc:a9313f9369acc70d20109a5e2621486fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza a desativação de um cliente endpoint DeleteClient  <a href="#a9313f9369acc70d20109a5e2621486fd">Mais...</a><br /></td></tr>
+<tr class="separator:a9313f9369acc70d20109a5e2621486fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63543b21b5d71a250f5c2e251e1725eb"><td class="memItemLeft" align="right" valign="top">Task&lt; HttpResponseMessage &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApi3Layers_1_1Controllers_1_1ClientController.html#a63543b21b5d71a250f5c2e251e1725eb">getbyID</a> (int id)</td></tr>
+<tr class="memdesc:a63543b21b5d71a250f5c2e251e1725eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza a busca de um cliente pelo ID (PK na tabela) endpoint GetbyID  <a href="#a63543b21b5d71a250f5c2e251e1725eb">Mais...</a><br /></td></tr>
+<tr class="separator:a63543b21b5d71a250f5c2e251e1725eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d76d1f7034cfdf7e36f0b2f47c61019"><td class="memItemLeft" align="right" valign="top">Task&lt; HttpResponseMessage &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApi3Layers_1_1Controllers_1_1ClientController.html#a6d76d1f7034cfdf7e36f0b2f47c61019">getbyName</a> (string name)</td></tr>
+<tr class="memdesc:a6d76d1f7034cfdf7e36f0b2f47c61019"><td class="mdescLeft">&#160;</td><td class="mdescRight">Busca um cliente pelo nome endpoint getbyName  <a href="#a6d76d1f7034cfdf7e36f0b2f47c61019">Mais...</a><br /></td></tr>
+<tr class="separator:a6d76d1f7034cfdf7e36f0b2f47c61019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd6322615b0779aafdbef5f44517f329"><td class="memItemLeft" align="right" valign="top">Task&lt; HttpResponseMessage &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApi3Layers_1_1Controllers_1_1ClientController.html#acd6322615b0779aafdbef5f44517f329">getClients</a> (Client client)</td></tr>
+<tr class="memdesc:acd6322615b0779aafdbef5f44517f329"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista todos os clientes, é necessario melhorar a performance dessa busca, esta um coco enpoint getclients  <a href="#acd6322615b0779aafdbef5f44517f329">Mais...</a><br /></td></tr>
+<tr class="separator:acd6322615b0779aafdbef5f44517f329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05f7ee98b8ff74ab142860e21b1f8350"><td class="memItemLeft" align="right" valign="top">Task&lt; HttpResponseMessage &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApi3Layers_1_1Controllers_1_1ClientController.html#a05f7ee98b8ff74ab142860e21b1f8350">PostClient</a> (Client client)</td></tr>
+<tr class="memdesc:a05f7ee98b8ff74ab142860e21b1f8350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria um novo cliente endpoint PostClient  <a href="#a05f7ee98b8ff74ab142860e21b1f8350">Mais...</a><br /></td></tr>
+<tr class="separator:a05f7ee98b8ff74ab142860e21b1f8350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9896ffbab1cde391410a4685f44f0f6"><td class="memItemLeft" align="right" valign="top">Task&lt; HttpResponseMessage &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApi3Layers_1_1Controllers_1_1ClientController.html#ad9896ffbab1cde391410a4685f44f0f6">PutClient</a> (Client client)</td></tr>
+<tr class="memdesc:ad9896ffbab1cde391410a4685f44f0f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atualiza um cliente selecionado endpoint PutClient  <a href="#ad9896ffbab1cde391410a4685f44f0f6">Mais...</a><br /></td></tr>
+<tr class="separator:ad9896ffbab1cde391410a4685f44f0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:a467fbe1f298526ce8f849c2cd8f8fa4e"><td class="memItemLeft" align="right" valign="top">TaskCompletionSource&lt; HttpResponseMessage &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApi3Layers_1_1Controllers_1_1ClientController.html#a467fbe1f298526ce8f849c2cd8f8fa4e">_CompleteTaskSource</a> = new TaskCompletionSource&lt;HttpResponseMessage&gt;()</td></tr>
+<tr class="separator:a467fbe1f298526ce8f849c2cd8f8fa4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addf535da0da455d00a0bd7a519f618cb"><td class="memItemLeft" align="right" valign="top">HttpResponseMessage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApi3Layers_1_1Controllers_1_1ClientController.html#addf535da0da455d00a0bd7a519f618cb">_response</a> = new HttpResponseMessage()</td></tr>
+<tr class="separator:addf535da0da455d00a0bd7a519f618cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
+<div class="textblock"><p>Classe de acesso da API, utiliza o prefixo api/Client, seu acesso se da pela url/api/Client + o endpoint selecionado </p>
+</div><h2 class="groupheader">Métodos</h2>
+<a id="a9313f9369acc70d20109a5e2621486fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9313f9369acc70d20109a5e2621486fd">&#9670;&nbsp;</a></span>DeleteClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task&lt;HttpResponseMessage&gt; DeleteClient </td>
+          <td>(</td>
+          <td class="paramtype">Client&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Realiza a desativação de um cliente endpoint DeleteClient </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a63543b21b5d71a250f5c2e251e1725eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63543b21b5d71a250f5c2e251e1725eb">&#9670;&nbsp;</a></span>getbyID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task&lt;HttpResponseMessage&gt; getbyID </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Realiza a busca de um cliente pelo ID (PK na tabela) endpoint GetbyID </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a6d76d1f7034cfdf7e36f0b2f47c61019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d76d1f7034cfdf7e36f0b2f47c61019">&#9670;&nbsp;</a></span>getbyName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task&lt;HttpResponseMessage&gt; getbyName </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Busca um cliente pelo nome endpoint getbyName </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="acd6322615b0779aafdbef5f44517f329"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd6322615b0779aafdbef5f44517f329">&#9670;&nbsp;</a></span>getClients()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task&lt;HttpResponseMessage&gt; getClients </td>
+          <td>(</td>
+          <td class="paramtype">Client&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lista todos os clientes, é necessario melhorar a performance dessa busca, esta um coco enpoint getclients </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a05f7ee98b8ff74ab142860e21b1f8350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05f7ee98b8ff74ab142860e21b1f8350">&#9670;&nbsp;</a></span>PostClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task&lt;HttpResponseMessage&gt; PostClient </td>
+          <td>(</td>
+          <td class="paramtype">Client&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cria um novo cliente endpoint PostClient </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ad9896ffbab1cde391410a4685f44f0f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9896ffbab1cde391410a4685f44f0f6">&#9670;&nbsp;</a></span>PutClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task&lt;HttpResponseMessage&gt; PutClient </td>
+          <td>(</td>
+          <td class="paramtype">Client&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Atualiza um cliente selecionado endpoint PutClient </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd></dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Atributos</h2>
+<a id="a467fbe1f298526ce8f849c2cd8f8fa4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a467fbe1f298526ce8f849c2cd8f8fa4e">&#9670;&nbsp;</a></span>_CompleteTaskSource</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TaskCompletionSource&lt;HttpResponseMessage&gt; _CompleteTaskSource = new TaskCompletionSource&lt;HttpResponseMessage&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="addf535da0da455d00a0bd7a519f618cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addf535da0da455d00a0bd7a519f618cb">&#9670;&nbsp;</a></span>_response</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HttpResponseMessage _response = new HttpResponseMessage()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte arquivo:<ul>
+<li>Api3Layers/Controllers/<a class="el" href="ClientController_8cs.html">ClientController.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

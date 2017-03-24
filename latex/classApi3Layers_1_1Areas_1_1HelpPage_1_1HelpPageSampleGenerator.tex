@@ -1,0 +1,352 @@
+\hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator}{}\section{Help\+Page\+Sample\+Generator}
+\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator}\index{Help\+Page\+Sample\+Generator@{Help\+Page\+Sample\+Generator}}
+
+
+This class will generate the samples for the help page.  
+
+
+\subsection*{Métodos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a60aa185fb74418b1ef0ce323e8a97d19}{Help\+Page\+Sample\+Generator} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator}{Help\+Page\+Sample\+Generator} class. \end{DoxyCompactList}\item 
+virtual object \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_afc3c226b317421515e9e9b457b42f0f5}{Get\+Action\+Sample} (string controller\+Name, string action\+Name, I\+Enumerable$<$ string $>$ parameter\+Names, Type type, Media\+Type\+Formatter formatter, Media\+Type\+Header\+Value media\+Type, \hyperlink{namespaceApi3Layers_1_1Areas_1_1HelpPage_abad9f6d2b059d72558bf70415efc32b5}{Sample\+Direction} sample\+Direction)
+\begin{DoxyCompactList}\small\item\em Search for samples that are provided directly through \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_aa710c187ca87cf2194303931e56088f5}{Action\+Samples}. \end{DoxyCompactList}\item 
+virtual I\+Dictionary$<$ Media\+Type\+Header\+Value, object $>$ \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a0fe20b65da31afc9d8067976c6388b80}{Get\+Sample} (Api\+Description api, \hyperlink{namespaceApi3Layers_1_1Areas_1_1HelpPage_abad9f6d2b059d72558bf70415efc32b5}{Sample\+Direction} sample\+Direction)
+\begin{DoxyCompactList}\small\item\em Gets the request or response body samples. \end{DoxyCompactList}\item 
+virtual object \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_af4bca1316988d1e1f24b3eb08072b96a}{Get\+Sample\+Object} (Type type)
+\begin{DoxyCompactList}\small\item\em Gets the sample object that will be serialized by the formatters. First, it will look at the \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a74c69a35009188bdaff61af066b34aaa}{Sample\+Objects}. If no sample object is found, it will try to create one using \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_ad705006e59bbf735bcf96abbf25219f2}{Default\+Sample\+Object\+Factory} (which wraps an \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator}{Object\+Generator}) and other factories in \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_afe79b8cfae9329d64220589984337741}{Sample\+Object\+Factories}. \end{DoxyCompactList}\item 
+I\+Dictionary$<$ Media\+Type\+Header\+Value, object $>$ \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a8390b1d96ceaaccb4ee4540b971f51d0}{Get\+Sample\+Requests} (Api\+Description api)
+\begin{DoxyCompactList}\small\item\em Gets the request body samples for a given Api\+Description. \end{DoxyCompactList}\item 
+I\+Dictionary$<$ Media\+Type\+Header\+Value, object $>$ \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a7e3dba29a03587e41cf2dc04475f266a}{Get\+Sample\+Responses} (Api\+Description api)
+\begin{DoxyCompactList}\small\item\em Gets the response body samples for a given Api\+Description. \end{DoxyCompactList}\item 
+virtual Type \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a74ffe7b081131a8417acace964c1ea1c}{Resolve\+Http\+Request\+Message\+Type} (Api\+Description api)
+\begin{DoxyCompactList}\small\item\em Resolves the actual type of System.\+Net.\+Http.\+Object\+Content$<$\+T$>$ passed to the System.\+Net.\+Http.\+Http\+Request\+Message in an action. \end{DoxyCompactList}\item 
+virtual Type \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a71304267702433f40e3c258cf76ca002}{Resolve\+Type} (Api\+Description api, string controller\+Name, string action\+Name, I\+Enumerable$<$ string $>$ parameter\+Names, \hyperlink{namespaceApi3Layers_1_1Areas_1_1HelpPage_abad9f6d2b059d72558bf70415efc32b5}{Sample\+Direction} sample\+Direction, out Collection$<$ Media\+Type\+Formatter $>$ formatters)
+\begin{DoxyCompactList}\small\item\em Resolves the type of the action parameter or return value when Http\+Request\+Message or Http\+Response\+Message is used. \end{DoxyCompactList}\item 
+virtual object \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a41bda7fb25234296d2c04e3370a50589}{Write\+Sample\+Object\+Using\+Formatter} (Media\+Type\+Formatter formatter, object value, Type type, Media\+Type\+Header\+Value media\+Type)
+\begin{DoxyCompactList}\small\item\em Writes the sample object using formatter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Funções Estáticas do Pacote}
+\begin{DoxyCompactItemize}
+\item 
+static Exception \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_ad7db82db5d8ace309e1e3db10283942e}{Unwrap\+Exception} (Exception exception)
+\end{DoxyCompactItemize}
+\subsection*{Propriedades}
+\begin{DoxyCompactItemize}
+\item 
+I\+Dictionary$<$ \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleKey}{Help\+Page\+Sample\+Key}, object $>$ \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_aa710c187ca87cf2194303931e56088f5}{Action\+Samples}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the objects that are used directly as samples for certain actions. \end{DoxyCompactList}\item 
+I\+Dictionary$<$ \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleKey}{Help\+Page\+Sample\+Key}, Type $>$ \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a37650c6415faa82d6ee870bbdf94c32e}{Actual\+Http\+Message\+Types}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets C\+LR types that are used as the content of Http\+Request\+Message or Http\+Response\+Message. \end{DoxyCompactList}\item 
+I\+List$<$ Func$<$ \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator}{Help\+Page\+Sample\+Generator}, Type, object $>$ $>$ \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_afe79b8cfae9329d64220589984337741}{Sample\+Object\+Factories}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets factories for the objects that the supported formatters will serialize as samples. Processed in order, stopping when the factory successfully returns a non-\/ object. \end{DoxyCompactList}\item 
+I\+Dictionary$<$ Type, object $>$ \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a74c69a35009188bdaff61af066b34aaa}{Sample\+Objects}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the objects that are serialized as samples by the supported formatters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos Privados}
+\begin{DoxyCompactItemize}
+\item 
+I\+Enumerable$<$ Key\+Value\+Pair$<$ \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleKey}{Help\+Page\+Sample\+Key}, object $>$ $>$ \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a5587173d00c977e59fdfa8c9ba660193}{Get\+All\+Action\+Samples} (string controller\+Name, string action\+Name, I\+Enumerable$<$ string $>$ parameter\+Names, \hyperlink{namespaceApi3Layers_1_1Areas_1_1HelpPage_abad9f6d2b059d72558bf70415efc32b5}{Sample\+Direction} sample\+Direction)
+\end{DoxyCompactItemize}
+\subsection*{Métodos Privados Estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static object \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_ad705006e59bbf735bcf96abbf25219f2}{Default\+Sample\+Object\+Factory} (\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator}{Help\+Page\+Sample\+Generator} sample\+Generator, Type type)
+\item 
+static bool \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a6c46eac56be8461a66b954a8c0e06dac}{Is\+Format\+Supported} (\hyperlink{namespaceApi3Layers_1_1Areas_1_1HelpPage_abad9f6d2b059d72558bf70415efc32b5}{Sample\+Direction} sample\+Direction, Media\+Type\+Formatter formatter, Type type)
+\item 
+static string \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a390e739bcbc6d6241fc34bd8588ffd2d}{Try\+Format\+Json} (string str)
+\item 
+static string \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a0c0c4adce63d443648d6e5618cba3f96}{Try\+Format\+Xml} (string str)
+\item 
+static object \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a57e4b4a6a99a2c46bd50607776fb92c0}{Wrap\+Sample\+If\+String} (object sample)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+This class will generate the samples for the help page. 
+
+
+
+\subsection{Construtores \& Destrutores}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a60aa185fb74418b1ef0ce323e8a97d19}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a60aa185fb74418b1ef0ce323e8a97d19}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Help\+Page\+Sample\+Generator@{Help\+Page\+Sample\+Generator}}
+\index{Help\+Page\+Sample\+Generator@{Help\+Page\+Sample\+Generator}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection{\texorpdfstring{Help\+Page\+Sample\+Generator()}{HelpPageSampleGenerator()}}
+{\footnotesize\ttfamily \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator}{Help\+Page\+Sample\+Generator} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator}{Help\+Page\+Sample\+Generator} class. 
+
+
+
+\subsection{Métodos}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_ad705006e59bbf735bcf96abbf25219f2}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_ad705006e59bbf735bcf96abbf25219f2}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Default\+Sample\+Object\+Factory@{Default\+Sample\+Object\+Factory}}
+\index{Default\+Sample\+Object\+Factory@{Default\+Sample\+Object\+Factory}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection{\texorpdfstring{Default\+Sample\+Object\+Factory()}{DefaultSampleObjectFactory()}}
+{\footnotesize\ttfamily static object Default\+Sample\+Object\+Factory (\begin{DoxyParamCaption}\item[{\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator}{Help\+Page\+Sample\+Generator}}]{sample\+Generator,  }\item[{Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_afc3c226b317421515e9e9b457b42f0f5}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_afc3c226b317421515e9e9b457b42f0f5}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Get\+Action\+Sample@{Get\+Action\+Sample}}
+\index{Get\+Action\+Sample@{Get\+Action\+Sample}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection{\texorpdfstring{Get\+Action\+Sample()}{GetActionSample()}}
+{\footnotesize\ttfamily virtual object Get\+Action\+Sample (\begin{DoxyParamCaption}\item[{string}]{controller\+Name,  }\item[{string}]{action\+Name,  }\item[{I\+Enumerable$<$ string $>$}]{parameter\+Names,  }\item[{Type}]{type,  }\item[{Media\+Type\+Formatter}]{formatter,  }\item[{Media\+Type\+Header\+Value}]{media\+Type,  }\item[{\hyperlink{namespaceApi3Layers_1_1Areas_1_1HelpPage_abad9f6d2b059d72558bf70415efc32b5}{Sample\+Direction}}]{sample\+Direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Search for samples that are provided directly through \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_aa710c187ca87cf2194303931e56088f5}{Action\+Samples}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em controller\+Name} & Name of the controller.\\
+\hline
+{\em action\+Name} & Name of the action.\\
+\hline
+{\em parameter\+Names} & The parameter names.\\
+\hline
+{\em type} & The C\+LR type.\\
+\hline
+{\em formatter} & The formatter.\\
+\hline
+{\em media\+Type} & The media type.\\
+\hline
+{\em sample\+Direction} & The value indicating whether the sample is for a request or for a response.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+The sample that matches the parameters.
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a5587173d00c977e59fdfa8c9ba660193}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a5587173d00c977e59fdfa8c9ba660193}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Get\+All\+Action\+Samples@{Get\+All\+Action\+Samples}}
+\index{Get\+All\+Action\+Samples@{Get\+All\+Action\+Samples}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection{\texorpdfstring{Get\+All\+Action\+Samples()}{GetAllActionSamples()}}
+{\footnotesize\ttfamily I\+Enumerable$<$Key\+Value\+Pair$<$\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleKey}{Help\+Page\+Sample\+Key}, object$>$ $>$ Get\+All\+Action\+Samples (\begin{DoxyParamCaption}\item[{string}]{controller\+Name,  }\item[{string}]{action\+Name,  }\item[{I\+Enumerable$<$ string $>$}]{parameter\+Names,  }\item[{\hyperlink{namespaceApi3Layers_1_1Areas_1_1HelpPage_abad9f6d2b059d72558bf70415efc32b5}{Sample\+Direction}}]{sample\+Direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a0fe20b65da31afc9d8067976c6388b80}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a0fe20b65da31afc9d8067976c6388b80}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Get\+Sample@{Get\+Sample}}
+\index{Get\+Sample@{Get\+Sample}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection{\texorpdfstring{Get\+Sample()}{GetSample()}}
+{\footnotesize\ttfamily virtual I\+Dictionary$<$Media\+Type\+Header\+Value, object$>$ Get\+Sample (\begin{DoxyParamCaption}\item[{Api\+Description}]{api,  }\item[{\hyperlink{namespaceApi3Layers_1_1Areas_1_1HelpPage_abad9f6d2b059d72558bf70415efc32b5}{Sample\+Direction}}]{sample\+Direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the request or response body samples. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em api} & The Api\+Description.\\
+\hline
+{\em sample\+Direction} & The value indicating whether the sample is for a request or for a response.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+The samples keyed by media type.
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_af4bca1316988d1e1f24b3eb08072b96a}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_af4bca1316988d1e1f24b3eb08072b96a}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Get\+Sample\+Object@{Get\+Sample\+Object}}
+\index{Get\+Sample\+Object@{Get\+Sample\+Object}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection{\texorpdfstring{Get\+Sample\+Object()}{GetSampleObject()}}
+{\footnotesize\ttfamily virtual object Get\+Sample\+Object (\begin{DoxyParamCaption}\item[{Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the sample object that will be serialized by the formatters. First, it will look at the \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a74c69a35009188bdaff61af066b34aaa}{Sample\+Objects}. If no sample object is found, it will try to create one using \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_ad705006e59bbf735bcf96abbf25219f2}{Default\+Sample\+Object\+Factory} (which wraps an \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator}{Object\+Generator}) and other factories in \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_afe79b8cfae9329d64220589984337741}{Sample\+Object\+Factories}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em type} & The type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+The sample object.
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a8390b1d96ceaaccb4ee4540b971f51d0}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a8390b1d96ceaaccb4ee4540b971f51d0}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Get\+Sample\+Requests@{Get\+Sample\+Requests}}
+\index{Get\+Sample\+Requests@{Get\+Sample\+Requests}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection{\texorpdfstring{Get\+Sample\+Requests()}{GetSampleRequests()}}
+{\footnotesize\ttfamily I\+Dictionary$<$Media\+Type\+Header\+Value, object$>$ Get\+Sample\+Requests (\begin{DoxyParamCaption}\item[{Api\+Description}]{api }\end{DoxyParamCaption})}
+
+
+
+Gets the request body samples for a given Api\+Description. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em api} & The Api\+Description.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+The samples keyed by media type.
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a7e3dba29a03587e41cf2dc04475f266a}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a7e3dba29a03587e41cf2dc04475f266a}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Get\+Sample\+Responses@{Get\+Sample\+Responses}}
+\index{Get\+Sample\+Responses@{Get\+Sample\+Responses}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection{\texorpdfstring{Get\+Sample\+Responses()}{GetSampleResponses()}}
+{\footnotesize\ttfamily I\+Dictionary$<$Media\+Type\+Header\+Value, object$>$ Get\+Sample\+Responses (\begin{DoxyParamCaption}\item[{Api\+Description}]{api }\end{DoxyParamCaption})}
+
+
+
+Gets the response body samples for a given Api\+Description. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em api} & The Api\+Description.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+The samples keyed by media type.
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a6c46eac56be8461a66b954a8c0e06dac}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a6c46eac56be8461a66b954a8c0e06dac}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Is\+Format\+Supported@{Is\+Format\+Supported}}
+\index{Is\+Format\+Supported@{Is\+Format\+Supported}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection{\texorpdfstring{Is\+Format\+Supported()}{IsFormatSupported()}}
+{\footnotesize\ttfamily static bool Is\+Format\+Supported (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceApi3Layers_1_1Areas_1_1HelpPage_abad9f6d2b059d72558bf70415efc32b5}{Sample\+Direction}}]{sample\+Direction,  }\item[{Media\+Type\+Formatter}]{formatter,  }\item[{Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a74ffe7b081131a8417acace964c1ea1c}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a74ffe7b081131a8417acace964c1ea1c}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Resolve\+Http\+Request\+Message\+Type@{Resolve\+Http\+Request\+Message\+Type}}
+\index{Resolve\+Http\+Request\+Message\+Type@{Resolve\+Http\+Request\+Message\+Type}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection{\texorpdfstring{Resolve\+Http\+Request\+Message\+Type()}{ResolveHttpRequestMessageType()}}
+{\footnotesize\ttfamily virtual Type Resolve\+Http\+Request\+Message\+Type (\begin{DoxyParamCaption}\item[{Api\+Description}]{api }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Resolves the actual type of System.\+Net.\+Http.\+Object\+Content$<$\+T$>$ passed to the System.\+Net.\+Http.\+Http\+Request\+Message in an action. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em api} & The Api\+Description.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+The type.
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a71304267702433f40e3c258cf76ca002}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a71304267702433f40e3c258cf76ca002}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Resolve\+Type@{Resolve\+Type}}
+\index{Resolve\+Type@{Resolve\+Type}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection{\texorpdfstring{Resolve\+Type()}{ResolveType()}}
+{\footnotesize\ttfamily virtual Type Resolve\+Type (\begin{DoxyParamCaption}\item[{Api\+Description}]{api,  }\item[{string}]{controller\+Name,  }\item[{string}]{action\+Name,  }\item[{I\+Enumerable$<$ string $>$}]{parameter\+Names,  }\item[{\hyperlink{namespaceApi3Layers_1_1Areas_1_1HelpPage_abad9f6d2b059d72558bf70415efc32b5}{Sample\+Direction}}]{sample\+Direction,  }\item[{out Collection$<$ Media\+Type\+Formatter $>$}]{formatters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Resolves the type of the action parameter or return value when Http\+Request\+Message or Http\+Response\+Message is used. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em api} & The Api\+Description.\\
+\hline
+{\em controller\+Name} & Name of the controller.\\
+\hline
+{\em action\+Name} & Name of the action.\\
+\hline
+{\em parameter\+Names} & The parameter names.\\
+\hline
+{\em sample\+Direction} & The value indicating whether the sample is for a request or a response.\\
+\hline
+{\em formatters} & The formatters.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a390e739bcbc6d6241fc34bd8588ffd2d}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a390e739bcbc6d6241fc34bd8588ffd2d}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Try\+Format\+Json@{Try\+Format\+Json}}
+\index{Try\+Format\+Json@{Try\+Format\+Json}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection{\texorpdfstring{Try\+Format\+Json()}{TryFormatJson()}}
+{\footnotesize\ttfamily static string Try\+Format\+Json (\begin{DoxyParamCaption}\item[{string}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a0c0c4adce63d443648d6e5618cba3f96}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a0c0c4adce63d443648d6e5618cba3f96}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Try\+Format\+Xml@{Try\+Format\+Xml}}
+\index{Try\+Format\+Xml@{Try\+Format\+Xml}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection{\texorpdfstring{Try\+Format\+Xml()}{TryFormatXml()}}
+{\footnotesize\ttfamily static string Try\+Format\+Xml (\begin{DoxyParamCaption}\item[{string}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_ad7db82db5d8ace309e1e3db10283942e}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_ad7db82db5d8ace309e1e3db10283942e}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Unwrap\+Exception@{Unwrap\+Exception}}
+\index{Unwrap\+Exception@{Unwrap\+Exception}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection{\texorpdfstring{Unwrap\+Exception()}{UnwrapException()}}
+{\footnotesize\ttfamily static Exception Unwrap\+Exception (\begin{DoxyParamCaption}\item[{Exception}]{exception }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a57e4b4a6a99a2c46bd50607776fb92c0}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a57e4b4a6a99a2c46bd50607776fb92c0}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Wrap\+Sample\+If\+String@{Wrap\+Sample\+If\+String}}
+\index{Wrap\+Sample\+If\+String@{Wrap\+Sample\+If\+String}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection{\texorpdfstring{Wrap\+Sample\+If\+String()}{WrapSampleIfString()}}
+{\footnotesize\ttfamily static object Wrap\+Sample\+If\+String (\begin{DoxyParamCaption}\item[{object}]{sample }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a41bda7fb25234296d2c04e3370a50589}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a41bda7fb25234296d2c04e3370a50589}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Write\+Sample\+Object\+Using\+Formatter@{Write\+Sample\+Object\+Using\+Formatter}}
+\index{Write\+Sample\+Object\+Using\+Formatter@{Write\+Sample\+Object\+Using\+Formatter}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection{\texorpdfstring{Write\+Sample\+Object\+Using\+Formatter()}{WriteSampleObjectUsingFormatter()}}
+{\footnotesize\ttfamily virtual object Write\+Sample\+Object\+Using\+Formatter (\begin{DoxyParamCaption}\item[{Media\+Type\+Formatter}]{formatter,  }\item[{object}]{value,  }\item[{Type}]{type,  }\item[{Media\+Type\+Header\+Value}]{media\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Writes the sample object using formatter. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em formatter} & The formatter.\\
+\hline
+{\em value} & The value.\\
+\hline
+{\em type} & The type.\\
+\hline
+{\em media\+Type} & Type of the media.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+
+
+\subsection{Propriedades}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_aa710c187ca87cf2194303931e56088f5}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_aa710c187ca87cf2194303931e56088f5}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Action\+Samples@{Action\+Samples}}
+\index{Action\+Samples@{Action\+Samples}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection{\texorpdfstring{Action\+Samples}{ActionSamples}}
+{\footnotesize\ttfamily I\+Dictionary$<$\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleKey}{Help\+Page\+Sample\+Key}, object$>$ Action\+Samples\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets the objects that are used directly as samples for certain actions. 
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a37650c6415faa82d6ee870bbdf94c32e}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a37650c6415faa82d6ee870bbdf94c32e}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Actual\+Http\+Message\+Types@{Actual\+Http\+Message\+Types}}
+\index{Actual\+Http\+Message\+Types@{Actual\+Http\+Message\+Types}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection{\texorpdfstring{Actual\+Http\+Message\+Types}{ActualHttpMessageTypes}}
+{\footnotesize\ttfamily I\+Dictionary$<$\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleKey}{Help\+Page\+Sample\+Key}, Type$>$ Actual\+Http\+Message\+Types\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets C\+LR types that are used as the content of Http\+Request\+Message or Http\+Response\+Message. 
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_afe79b8cfae9329d64220589984337741}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_afe79b8cfae9329d64220589984337741}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Sample\+Object\+Factories@{Sample\+Object\+Factories}}
+\index{Sample\+Object\+Factories@{Sample\+Object\+Factories}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection{\texorpdfstring{Sample\+Object\+Factories}{SampleObjectFactories}}
+{\footnotesize\ttfamily I\+List$<$Func$<$\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator}{Help\+Page\+Sample\+Generator}, Type, object$>$ $>$ Sample\+Object\+Factories\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Gets factories for the objects that the supported formatters will serialize as samples. Processed in order, stopping when the factory successfully returns a non-\/ object. 
+
+Collection includes just \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a5a661e03cac6c900f73a7e9e6e2d205d}{Object\+Generator.\+Generate\+Object(\+Type)} initially. Use 
+\begin{DoxyCode}
+\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_afe79b8cfae9329d64220589984337741}{SampleObjectFactories}.Insert(0, func)
+\end{DoxyCode}
+ to provide an override and 
+\begin{DoxyCode}
+\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_afe79b8cfae9329d64220589984337741}{SampleObjectFactories}.Add(func)
+\end{DoxyCode}
+ to provide a fallback.\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a74c69a35009188bdaff61af066b34aaa}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator_a74c69a35009188bdaff61af066b34aaa}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Sample\+Objects@{Sample\+Objects}}
+\index{Sample\+Objects@{Sample\+Objects}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection{\texorpdfstring{Sample\+Objects}{SampleObjects}}
+{\footnotesize\ttfamily I\+Dictionary$<$Type, object$>$ Sample\+Objects\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets the objects that are serialized as samples by the supported formatters. 
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte arquivo\+:\begin{DoxyCompactItemize}
+\item 
+Api3\+Layers/\+Areas/\+Help\+Page/\+Sample\+Generation/\hyperlink{HelpPageSampleGenerator_8cs}{Help\+Page\+Sample\+Generator.\+cs}\end{DoxyCompactItemize}

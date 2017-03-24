@@ -1,0 +1,473 @@
+\hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions}{}\section{Help\+Page\+Configuration\+Extensions}
+\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions}\index{Help\+Page\+Configuration\+Extensions@{Help\+Page\+Configuration\+Extensions}}
+\subsection*{Métodos Públicos Estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1Models_1_1HelpPageApiModel}{Help\+Page\+Api\+Model} \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a8e1dd06343ebfd465042fb7fde291909}{Get\+Help\+Page\+Api\+Model} (this Http\+Configuration config, string api\+Description\+Id)
+\begin{DoxyCompactList}\small\item\em Gets the model that represents an A\+PI displayed on the help page. The model is initialized on the first call and cached for subsequent calls. \end{DoxyCompactList}\item 
+static \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator}{Help\+Page\+Sample\+Generator} \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a7f67d57eac84d585f41aabeb28ae7bd0}{Get\+Help\+Page\+Sample\+Generator} (this Http\+Configuration config)
+\begin{DoxyCompactList}\small\item\em Gets the help page sample generator. \end{DoxyCompactList}\item 
+static \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator}{Model\+Description\+Generator} \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_aa3345ea75f3272cdc05598cceeddd7a9}{Get\+Model\+Description\+Generator} (this Http\+Configuration config)
+\begin{DoxyCompactList}\small\item\em Gets the model description generator. \end{DoxyCompactList}\item 
+static void \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a977618c0c67efa9733ed109a3f730409}{Set\+Actual\+Request\+Type} (this Http\+Configuration config, Type type, string controller\+Name, string action\+Name)
+\begin{DoxyCompactList}\small\item\em Specifies the actual type of System.\+Net.\+Http.\+Object\+Content$<$\+T$>$ passed to the System.\+Net.\+Http.\+Http\+Request\+Message in an action. The help page will use this information to produce more accurate request samples. \end{DoxyCompactList}\item 
+static void \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_ab354c6439434e49c51e02a5a1d37f160}{Set\+Actual\+Request\+Type} (this Http\+Configuration config, Type type, string controller\+Name, string action\+Name, params string\mbox{[}$\,$\mbox{]} parameter\+Names)
+\begin{DoxyCompactList}\small\item\em Specifies the actual type of System.\+Net.\+Http.\+Object\+Content$<$\+T$>$ passed to the System.\+Net.\+Http.\+Http\+Request\+Message in an action. The help page will use this information to produce more accurate request samples. \end{DoxyCompactList}\item 
+static void \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a7cb7f27af68b6ee4e745f021ec1b556a}{Set\+Actual\+Response\+Type} (this Http\+Configuration config, Type type, string controller\+Name, string action\+Name)
+\begin{DoxyCompactList}\small\item\em Specifies the actual type of System.\+Net.\+Http.\+Object\+Content$<$\+T$>$ returned as part of the System.\+Net.\+Http.\+Http\+Request\+Message in an action. The help page will use this information to produce more accurate response samples. \end{DoxyCompactList}\item 
+static void \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_adba814aa7b0c89363674b03b2f7e93ef}{Set\+Actual\+Response\+Type} (this Http\+Configuration config, Type type, string controller\+Name, string action\+Name, params string\mbox{[}$\,$\mbox{]} parameter\+Names)
+\begin{DoxyCompactList}\small\item\em Specifies the actual type of System.\+Net.\+Http.\+Object\+Content$<$\+T$>$ returned as part of the System.\+Net.\+Http.\+Http\+Request\+Message in an action. The help page will use this information to produce more accurate response samples. \end{DoxyCompactList}\item 
+static void \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_af10aae8f181e9989cbf3183a7dd297c7}{Set\+Documentation\+Provider} (this Http\+Configuration config, I\+Documentation\+Provider documentation\+Provider)
+\begin{DoxyCompactList}\small\item\em Sets the documentation provider for help page. \end{DoxyCompactList}\item 
+static void \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a4788b1a5481baebf9302bad07fa4d784}{Set\+Help\+Page\+Sample\+Generator} (this Http\+Configuration config, \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator}{Help\+Page\+Sample\+Generator} sample\+Generator)
+\begin{DoxyCompactList}\small\item\em Sets the help page sample generator. \end{DoxyCompactList}\item 
+static void \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_af6ec1b6adfbeb0c61221bb7eeed98c8e}{Set\+Sample\+For\+Media\+Type} (this Http\+Configuration config, object sample, Media\+Type\+Header\+Value media\+Type)
+\begin{DoxyCompactList}\small\item\em Sets the sample directly for all actions with the specified media type. \end{DoxyCompactList}\item 
+static void \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_ac4e9d3ce5bc78349ee756b5eae07718a}{Set\+Sample\+For\+Type} (this Http\+Configuration config, object sample, Media\+Type\+Header\+Value media\+Type, Type type)
+\begin{DoxyCompactList}\small\item\em Sets the sample directly for all actions with the specified type and media type. \end{DoxyCompactList}\item 
+static void \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a0578ea8446c286c76da516e819fe253c}{Set\+Sample\+Objects} (this Http\+Configuration config, I\+Dictionary$<$ Type, object $>$ sample\+Objects)
+\begin{DoxyCompactList}\small\item\em Sets the objects that will be used by the formatters to produce sample requests/responses. \end{DoxyCompactList}\item 
+static void \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a82bd1788448158adaca5a19be618f630}{Set\+Sample\+Request} (this Http\+Configuration config, object sample, Media\+Type\+Header\+Value media\+Type, string controller\+Name, string action\+Name)
+\begin{DoxyCompactList}\small\item\em Sets the sample request directly for the specified media type and action. \end{DoxyCompactList}\item 
+static void \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a1974e4f7b6984e2dbd16badf7700a505}{Set\+Sample\+Request} (this Http\+Configuration config, object sample, Media\+Type\+Header\+Value media\+Type, string controller\+Name, string action\+Name, params string\mbox{[}$\,$\mbox{]} parameter\+Names)
+\begin{DoxyCompactList}\small\item\em Sets the sample request directly for the specified media type and action with parameters. \end{DoxyCompactList}\item 
+static void \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a51e9644a90326e7a1927c78a8d1e346b}{Set\+Sample\+Response} (this Http\+Configuration config, object sample, Media\+Type\+Header\+Value media\+Type, string controller\+Name, string action\+Name)
+\begin{DoxyCompactList}\small\item\em Sets the sample request directly for the specified media type of the action. \end{DoxyCompactList}\item 
+static void \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a5a807eb4c15e3e12fc45ccaca4c87603}{Set\+Sample\+Response} (this Http\+Configuration config, object sample, Media\+Type\+Header\+Value media\+Type, string controller\+Name, string action\+Name, params string\mbox{[}$\,$\mbox{]} parameter\+Names)
+\begin{DoxyCompactList}\small\item\em Sets the sample response directly for the specified media type of the action with specific parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos Privados Estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ParameterDescription}{Parameter\+Description} \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_ab6eed27114a1a255723fa4ab8a65586d}{Add\+Parameter\+Description} (\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1Models_1_1HelpPageApiModel}{Help\+Page\+Api\+Model} api\+Model, Api\+Parameter\+Description api\+Parameter, \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescription}{Model\+Description} type\+Description)
+\item 
+static \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1Models_1_1HelpPageApiModel}{Help\+Page\+Api\+Model} \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a3008459bcff41d3002541c3ff407e712}{Generate\+Api\+Model} (Api\+Description api\+Description, Http\+Configuration config)
+\item 
+static void \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_af01d383426748f527ebe3c07e9f8a4bc}{Generate\+Request\+Model\+Description} (\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1Models_1_1HelpPageApiModel}{Help\+Page\+Api\+Model} api\+Model, \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator}{Model\+Description\+Generator} model\+Generator, \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator}{Help\+Page\+Sample\+Generator} sample\+Generator)
+\item 
+static void \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_ad4296fc92e40d842eb654298d2ed3e7e}{Generate\+Resource\+Description} (\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1Models_1_1HelpPageApiModel}{Help\+Page\+Api\+Model} api\+Model, \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator}{Model\+Description\+Generator} model\+Generator)
+\item 
+static void \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_ad2943e71c3adf193fbfdc68e06d35898}{Generate\+Samples} (\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1Models_1_1HelpPageApiModel}{Help\+Page\+Api\+Model} api\+Model, \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator}{Help\+Page\+Sample\+Generator} sample\+Generator)
+\item 
+static void \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_af3b2401673b568e9a8db7b2627fc031d}{Generate\+Uri\+Parameters} (\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1Models_1_1HelpPageApiModel}{Help\+Page\+Api\+Model} api\+Model, \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator}{Model\+Description\+Generator} model\+Generator)
+\item 
+static \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator}{Model\+Description\+Generator} \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a16f47e8aa323c09cd0cf32e89db952bf}{Initialize\+Model\+Description\+Generator} (Http\+Configuration config)
+\item 
+static bool \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a732c7e4cbb02fe025f256f3d4474b914}{Is\+Bindable\+With\+Type\+Converter} (Type parameter\+Type)
+\item 
+static void \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_ab46e5f234a0f063dfaf277f77ddee2f6}{Log\+Invalid\+Sample\+As\+Error} (\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1Models_1_1HelpPageApiModel}{Help\+Page\+Api\+Model} api\+Model, object sample)
+\item 
+static bool \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_ad4d11c54254ca636a77a9cc8aef8c46e}{Try\+Get\+Resource\+Parameter} (Api\+Description api\+Description, Http\+Configuration config, out Api\+Parameter\+Description parameter\+Description, out Type resource\+Type)
+\end{DoxyCompactItemize}
+\subsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+const string \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a04d4e06a2bc79e7cf9f3acb633928c3a}{Api\+Model\+Prefix} = \char`\"{}M\+S\+\_\+\+Help\+Page\+Api\+Model\+\_\+\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Métodos}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_ab6eed27114a1a255723fa4ab8a65586d}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_ab6eed27114a1a255723fa4ab8a65586d}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Add\+Parameter\+Description@{Add\+Parameter\+Description}}
+\index{Add\+Parameter\+Description@{Add\+Parameter\+Description}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Add\+Parameter\+Description()}{AddParameterDescription()}}
+{\footnotesize\ttfamily static \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ParameterDescription}{Parameter\+Description} Add\+Parameter\+Description (\begin{DoxyParamCaption}\item[{\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1Models_1_1HelpPageApiModel}{Help\+Page\+Api\+Model}}]{api\+Model,  }\item[{Api\+Parameter\+Description}]{api\+Parameter,  }\item[{\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescription}{Model\+Description}}]{type\+Description }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a3008459bcff41d3002541c3ff407e712}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a3008459bcff41d3002541c3ff407e712}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Generate\+Api\+Model@{Generate\+Api\+Model}}
+\index{Generate\+Api\+Model@{Generate\+Api\+Model}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Generate\+Api\+Model()}{GenerateApiModel()}}
+{\footnotesize\ttfamily static \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1Models_1_1HelpPageApiModel}{Help\+Page\+Api\+Model} Generate\+Api\+Model (\begin{DoxyParamCaption}\item[{Api\+Description}]{api\+Description,  }\item[{Http\+Configuration}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_af01d383426748f527ebe3c07e9f8a4bc}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_af01d383426748f527ebe3c07e9f8a4bc}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Generate\+Request\+Model\+Description@{Generate\+Request\+Model\+Description}}
+\index{Generate\+Request\+Model\+Description@{Generate\+Request\+Model\+Description}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Generate\+Request\+Model\+Description()}{GenerateRequestModelDescription()}}
+{\footnotesize\ttfamily static void Generate\+Request\+Model\+Description (\begin{DoxyParamCaption}\item[{\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1Models_1_1HelpPageApiModel}{Help\+Page\+Api\+Model}}]{api\+Model,  }\item[{\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator}{Model\+Description\+Generator}}]{model\+Generator,  }\item[{\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator}{Help\+Page\+Sample\+Generator}}]{sample\+Generator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_ad4296fc92e40d842eb654298d2ed3e7e}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_ad4296fc92e40d842eb654298d2ed3e7e}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Generate\+Resource\+Description@{Generate\+Resource\+Description}}
+\index{Generate\+Resource\+Description@{Generate\+Resource\+Description}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Generate\+Resource\+Description()}{GenerateResourceDescription()}}
+{\footnotesize\ttfamily static void Generate\+Resource\+Description (\begin{DoxyParamCaption}\item[{\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1Models_1_1HelpPageApiModel}{Help\+Page\+Api\+Model}}]{api\+Model,  }\item[{\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator}{Model\+Description\+Generator}}]{model\+Generator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_ad2943e71c3adf193fbfdc68e06d35898}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_ad2943e71c3adf193fbfdc68e06d35898}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Generate\+Samples@{Generate\+Samples}}
+\index{Generate\+Samples@{Generate\+Samples}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Generate\+Samples()}{GenerateSamples()}}
+{\footnotesize\ttfamily static void Generate\+Samples (\begin{DoxyParamCaption}\item[{\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1Models_1_1HelpPageApiModel}{Help\+Page\+Api\+Model}}]{api\+Model,  }\item[{\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator}{Help\+Page\+Sample\+Generator}}]{sample\+Generator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_af3b2401673b568e9a8db7b2627fc031d}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_af3b2401673b568e9a8db7b2627fc031d}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Generate\+Uri\+Parameters@{Generate\+Uri\+Parameters}}
+\index{Generate\+Uri\+Parameters@{Generate\+Uri\+Parameters}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Generate\+Uri\+Parameters()}{GenerateUriParameters()}}
+{\footnotesize\ttfamily static void Generate\+Uri\+Parameters (\begin{DoxyParamCaption}\item[{\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1Models_1_1HelpPageApiModel}{Help\+Page\+Api\+Model}}]{api\+Model,  }\item[{\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator}{Model\+Description\+Generator}}]{model\+Generator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a8e1dd06343ebfd465042fb7fde291909}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a8e1dd06343ebfd465042fb7fde291909}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Get\+Help\+Page\+Api\+Model@{Get\+Help\+Page\+Api\+Model}}
+\index{Get\+Help\+Page\+Api\+Model@{Get\+Help\+Page\+Api\+Model}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Get\+Help\+Page\+Api\+Model()}{GetHelpPageApiModel()}}
+{\footnotesize\ttfamily static \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1Models_1_1HelpPageApiModel}{Help\+Page\+Api\+Model} Get\+Help\+Page\+Api\+Model (\begin{DoxyParamCaption}\item[{this Http\+Configuration}]{config,  }\item[{string}]{api\+Description\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the model that represents an A\+PI displayed on the help page. The model is initialized on the first call and cached for subsequent calls. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em config} & The Http\+Configuration.\\
+\hline
+{\em api\+Description\+Id} & The Api\+Description ID.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+An Help\+Page\+Api\+Model 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a7f67d57eac84d585f41aabeb28ae7bd0}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a7f67d57eac84d585f41aabeb28ae7bd0}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Get\+Help\+Page\+Sample\+Generator@{Get\+Help\+Page\+Sample\+Generator}}
+\index{Get\+Help\+Page\+Sample\+Generator@{Get\+Help\+Page\+Sample\+Generator}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Get\+Help\+Page\+Sample\+Generator()}{GetHelpPageSampleGenerator()}}
+{\footnotesize\ttfamily static \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator}{Help\+Page\+Sample\+Generator} Get\+Help\+Page\+Sample\+Generator (\begin{DoxyParamCaption}\item[{this Http\+Configuration}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the help page sample generator. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em config} & The Http\+Configuration.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+The help page sample generator.
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_aa3345ea75f3272cdc05598cceeddd7a9}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_aa3345ea75f3272cdc05598cceeddd7a9}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Get\+Model\+Description\+Generator@{Get\+Model\+Description\+Generator}}
+\index{Get\+Model\+Description\+Generator@{Get\+Model\+Description\+Generator}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Get\+Model\+Description\+Generator()}{GetModelDescriptionGenerator()}}
+{\footnotesize\ttfamily static \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator}{Model\+Description\+Generator} Get\+Model\+Description\+Generator (\begin{DoxyParamCaption}\item[{this Http\+Configuration}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the model description generator. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em config} & The configuration.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+The Model\+Description\+Generator
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a16f47e8aa323c09cd0cf32e89db952bf}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a16f47e8aa323c09cd0cf32e89db952bf}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Initialize\+Model\+Description\+Generator@{Initialize\+Model\+Description\+Generator}}
+\index{Initialize\+Model\+Description\+Generator@{Initialize\+Model\+Description\+Generator}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Initialize\+Model\+Description\+Generator()}{InitializeModelDescriptionGenerator()}}
+{\footnotesize\ttfamily static \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ModelDescriptionGenerator}{Model\+Description\+Generator} Initialize\+Model\+Description\+Generator (\begin{DoxyParamCaption}\item[{Http\+Configuration}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a732c7e4cbb02fe025f256f3d4474b914}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a732c7e4cbb02fe025f256f3d4474b914}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Is\+Bindable\+With\+Type\+Converter@{Is\+Bindable\+With\+Type\+Converter}}
+\index{Is\+Bindable\+With\+Type\+Converter@{Is\+Bindable\+With\+Type\+Converter}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Is\+Bindable\+With\+Type\+Converter()}{IsBindableWithTypeConverter()}}
+{\footnotesize\ttfamily static bool Is\+Bindable\+With\+Type\+Converter (\begin{DoxyParamCaption}\item[{Type}]{parameter\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_ab46e5f234a0f063dfaf277f77ddee2f6}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_ab46e5f234a0f063dfaf277f77ddee2f6}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Log\+Invalid\+Sample\+As\+Error@{Log\+Invalid\+Sample\+As\+Error}}
+\index{Log\+Invalid\+Sample\+As\+Error@{Log\+Invalid\+Sample\+As\+Error}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Log\+Invalid\+Sample\+As\+Error()}{LogInvalidSampleAsError()}}
+{\footnotesize\ttfamily static void Log\+Invalid\+Sample\+As\+Error (\begin{DoxyParamCaption}\item[{\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1Models_1_1HelpPageApiModel}{Help\+Page\+Api\+Model}}]{api\+Model,  }\item[{object}]{sample }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a977618c0c67efa9733ed109a3f730409}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a977618c0c67efa9733ed109a3f730409}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Set\+Actual\+Request\+Type@{Set\+Actual\+Request\+Type}}
+\index{Set\+Actual\+Request\+Type@{Set\+Actual\+Request\+Type}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Set\+Actual\+Request\+Type()}{SetActualRequestType()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Set\+Actual\+Request\+Type (\begin{DoxyParamCaption}\item[{this Http\+Configuration}]{config,  }\item[{Type}]{type,  }\item[{string}]{controller\+Name,  }\item[{string}]{action\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Specifies the actual type of System.\+Net.\+Http.\+Object\+Content$<$\+T$>$ passed to the System.\+Net.\+Http.\+Http\+Request\+Message in an action. The help page will use this information to produce more accurate request samples. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em config} & The Http\+Configuration.\\
+\hline
+{\em type} & The type.\\
+\hline
+{\em controller\+Name} & Name of the controller.\\
+\hline
+{\em action\+Name} & Name of the action.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_ab354c6439434e49c51e02a5a1d37f160}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_ab354c6439434e49c51e02a5a1d37f160}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Set\+Actual\+Request\+Type@{Set\+Actual\+Request\+Type}}
+\index{Set\+Actual\+Request\+Type@{Set\+Actual\+Request\+Type}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Set\+Actual\+Request\+Type()}{SetActualRequestType()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Set\+Actual\+Request\+Type (\begin{DoxyParamCaption}\item[{this Http\+Configuration}]{config,  }\item[{Type}]{type,  }\item[{string}]{controller\+Name,  }\item[{string}]{action\+Name,  }\item[{params string \mbox{[}$\,$\mbox{]}}]{parameter\+Names }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Specifies the actual type of System.\+Net.\+Http.\+Object\+Content$<$\+T$>$ passed to the System.\+Net.\+Http.\+Http\+Request\+Message in an action. The help page will use this information to produce more accurate request samples. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em config} & The Http\+Configuration.\\
+\hline
+{\em type} & The type.\\
+\hline
+{\em controller\+Name} & Name of the controller.\\
+\hline
+{\em action\+Name} & Name of the action.\\
+\hline
+{\em parameter\+Names} & The parameter names.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a7cb7f27af68b6ee4e745f021ec1b556a}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a7cb7f27af68b6ee4e745f021ec1b556a}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Set\+Actual\+Response\+Type@{Set\+Actual\+Response\+Type}}
+\index{Set\+Actual\+Response\+Type@{Set\+Actual\+Response\+Type}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Set\+Actual\+Response\+Type()}{SetActualResponseType()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Set\+Actual\+Response\+Type (\begin{DoxyParamCaption}\item[{this Http\+Configuration}]{config,  }\item[{Type}]{type,  }\item[{string}]{controller\+Name,  }\item[{string}]{action\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Specifies the actual type of System.\+Net.\+Http.\+Object\+Content$<$\+T$>$ returned as part of the System.\+Net.\+Http.\+Http\+Request\+Message in an action. The help page will use this information to produce more accurate response samples. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em config} & The Http\+Configuration.\\
+\hline
+{\em type} & The type.\\
+\hline
+{\em controller\+Name} & Name of the controller.\\
+\hline
+{\em action\+Name} & Name of the action.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_adba814aa7b0c89363674b03b2f7e93ef}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_adba814aa7b0c89363674b03b2f7e93ef}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Set\+Actual\+Response\+Type@{Set\+Actual\+Response\+Type}}
+\index{Set\+Actual\+Response\+Type@{Set\+Actual\+Response\+Type}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Set\+Actual\+Response\+Type()}{SetActualResponseType()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Set\+Actual\+Response\+Type (\begin{DoxyParamCaption}\item[{this Http\+Configuration}]{config,  }\item[{Type}]{type,  }\item[{string}]{controller\+Name,  }\item[{string}]{action\+Name,  }\item[{params string \mbox{[}$\,$\mbox{]}}]{parameter\+Names }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Specifies the actual type of System.\+Net.\+Http.\+Object\+Content$<$\+T$>$ returned as part of the System.\+Net.\+Http.\+Http\+Request\+Message in an action. The help page will use this information to produce more accurate response samples. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em config} & The Http\+Configuration.\\
+\hline
+{\em type} & The type.\\
+\hline
+{\em controller\+Name} & Name of the controller.\\
+\hline
+{\em action\+Name} & Name of the action.\\
+\hline
+{\em parameter\+Names} & The parameter names.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_af10aae8f181e9989cbf3183a7dd297c7}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_af10aae8f181e9989cbf3183a7dd297c7}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Set\+Documentation\+Provider@{Set\+Documentation\+Provider}}
+\index{Set\+Documentation\+Provider@{Set\+Documentation\+Provider}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Set\+Documentation\+Provider()}{SetDocumentationProvider()}}
+{\footnotesize\ttfamily static void Set\+Documentation\+Provider (\begin{DoxyParamCaption}\item[{this Http\+Configuration}]{config,  }\item[{I\+Documentation\+Provider}]{documentation\+Provider }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the documentation provider for help page. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em config} & The Http\+Configuration.\\
+\hline
+{\em documentation\+Provider} & The documentation provider.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a4788b1a5481baebf9302bad07fa4d784}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a4788b1a5481baebf9302bad07fa4d784}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Set\+Help\+Page\+Sample\+Generator@{Set\+Help\+Page\+Sample\+Generator}}
+\index{Set\+Help\+Page\+Sample\+Generator@{Set\+Help\+Page\+Sample\+Generator}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Set\+Help\+Page\+Sample\+Generator()}{SetHelpPageSampleGenerator()}}
+{\footnotesize\ttfamily static void Set\+Help\+Page\+Sample\+Generator (\begin{DoxyParamCaption}\item[{this Http\+Configuration}]{config,  }\item[{\hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageSampleGenerator}{Help\+Page\+Sample\+Generator}}]{sample\+Generator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the help page sample generator. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em config} & The Http\+Configuration.\\
+\hline
+{\em sample\+Generator} & The help page sample generator.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_af6ec1b6adfbeb0c61221bb7eeed98c8e}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_af6ec1b6adfbeb0c61221bb7eeed98c8e}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Set\+Sample\+For\+Media\+Type@{Set\+Sample\+For\+Media\+Type}}
+\index{Set\+Sample\+For\+Media\+Type@{Set\+Sample\+For\+Media\+Type}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Set\+Sample\+For\+Media\+Type()}{SetSampleForMediaType()}}
+{\footnotesize\ttfamily static void Set\+Sample\+For\+Media\+Type (\begin{DoxyParamCaption}\item[{this Http\+Configuration}]{config,  }\item[{object}]{sample,  }\item[{Media\+Type\+Header\+Value}]{media\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the sample directly for all actions with the specified media type. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em config} & The Http\+Configuration.\\
+\hline
+{\em sample} & The sample.\\
+\hline
+{\em media\+Type} & The media type.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_ac4e9d3ce5bc78349ee756b5eae07718a}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_ac4e9d3ce5bc78349ee756b5eae07718a}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Set\+Sample\+For\+Type@{Set\+Sample\+For\+Type}}
+\index{Set\+Sample\+For\+Type@{Set\+Sample\+For\+Type}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Set\+Sample\+For\+Type()}{SetSampleForType()}}
+{\footnotesize\ttfamily static void Set\+Sample\+For\+Type (\begin{DoxyParamCaption}\item[{this Http\+Configuration}]{config,  }\item[{object}]{sample,  }\item[{Media\+Type\+Header\+Value}]{media\+Type,  }\item[{Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the sample directly for all actions with the specified type and media type. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em config} & The Http\+Configuration.\\
+\hline
+{\em sample} & The sample.\\
+\hline
+{\em media\+Type} & The media type.\\
+\hline
+{\em type} & The parameter type or return type of an action.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a0578ea8446c286c76da516e819fe253c}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a0578ea8446c286c76da516e819fe253c}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Set\+Sample\+Objects@{Set\+Sample\+Objects}}
+\index{Set\+Sample\+Objects@{Set\+Sample\+Objects}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Set\+Sample\+Objects()}{SetSampleObjects()}}
+{\footnotesize\ttfamily static void Set\+Sample\+Objects (\begin{DoxyParamCaption}\item[{this Http\+Configuration}]{config,  }\item[{I\+Dictionary$<$ Type, object $>$}]{sample\+Objects }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the objects that will be used by the formatters to produce sample requests/responses. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em config} & The Http\+Configuration.\\
+\hline
+{\em sample\+Objects} & The sample objects.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a82bd1788448158adaca5a19be618f630}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a82bd1788448158adaca5a19be618f630}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Set\+Sample\+Request@{Set\+Sample\+Request}}
+\index{Set\+Sample\+Request@{Set\+Sample\+Request}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Set\+Sample\+Request()}{SetSampleRequest()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Set\+Sample\+Request (\begin{DoxyParamCaption}\item[{this Http\+Configuration}]{config,  }\item[{object}]{sample,  }\item[{Media\+Type\+Header\+Value}]{media\+Type,  }\item[{string}]{controller\+Name,  }\item[{string}]{action\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the sample request directly for the specified media type and action. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em config} & The Http\+Configuration.\\
+\hline
+{\em sample} & The sample request.\\
+\hline
+{\em media\+Type} & The media type.\\
+\hline
+{\em controller\+Name} & Name of the controller.\\
+\hline
+{\em action\+Name} & Name of the action.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a1974e4f7b6984e2dbd16badf7700a505}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a1974e4f7b6984e2dbd16badf7700a505}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Set\+Sample\+Request@{Set\+Sample\+Request}}
+\index{Set\+Sample\+Request@{Set\+Sample\+Request}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Set\+Sample\+Request()}{SetSampleRequest()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Set\+Sample\+Request (\begin{DoxyParamCaption}\item[{this Http\+Configuration}]{config,  }\item[{object}]{sample,  }\item[{Media\+Type\+Header\+Value}]{media\+Type,  }\item[{string}]{controller\+Name,  }\item[{string}]{action\+Name,  }\item[{params string \mbox{[}$\,$\mbox{]}}]{parameter\+Names }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the sample request directly for the specified media type and action with parameters. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em config} & The Http\+Configuration.\\
+\hline
+{\em sample} & The sample request.\\
+\hline
+{\em media\+Type} & The media type.\\
+\hline
+{\em controller\+Name} & Name of the controller.\\
+\hline
+{\em action\+Name} & Name of the action.\\
+\hline
+{\em parameter\+Names} & The parameter names.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a51e9644a90326e7a1927c78a8d1e346b}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a51e9644a90326e7a1927c78a8d1e346b}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Set\+Sample\+Response@{Set\+Sample\+Response}}
+\index{Set\+Sample\+Response@{Set\+Sample\+Response}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Set\+Sample\+Response()}{SetSampleResponse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Set\+Sample\+Response (\begin{DoxyParamCaption}\item[{this Http\+Configuration}]{config,  }\item[{object}]{sample,  }\item[{Media\+Type\+Header\+Value}]{media\+Type,  }\item[{string}]{controller\+Name,  }\item[{string}]{action\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the sample request directly for the specified media type of the action. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em config} & The Http\+Configuration.\\
+\hline
+{\em sample} & The sample response.\\
+\hline
+{\em media\+Type} & The media type.\\
+\hline
+{\em controller\+Name} & Name of the controller.\\
+\hline
+{\em action\+Name} & Name of the action.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a5a807eb4c15e3e12fc45ccaca4c87603}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a5a807eb4c15e3e12fc45ccaca4c87603}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Set\+Sample\+Response@{Set\+Sample\+Response}}
+\index{Set\+Sample\+Response@{Set\+Sample\+Response}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Set\+Sample\+Response()}{SetSampleResponse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Set\+Sample\+Response (\begin{DoxyParamCaption}\item[{this Http\+Configuration}]{config,  }\item[{object}]{sample,  }\item[{Media\+Type\+Header\+Value}]{media\+Type,  }\item[{string}]{controller\+Name,  }\item[{string}]{action\+Name,  }\item[{params string \mbox{[}$\,$\mbox{]}}]{parameter\+Names }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the sample response directly for the specified media type of the action with specific parameters. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em config} & The Http\+Configuration.\\
+\hline
+{\em sample} & The sample response.\\
+\hline
+{\em media\+Type} & The media type.\\
+\hline
+{\em controller\+Name} & Name of the controller.\\
+\hline
+{\em action\+Name} & Name of the action.\\
+\hline
+{\em parameter\+Names} & The parameter names.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_ad4d11c54254ca636a77a9cc8aef8c46e}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_ad4d11c54254ca636a77a9cc8aef8c46e}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Try\+Get\+Resource\+Parameter@{Try\+Get\+Resource\+Parameter}}
+\index{Try\+Get\+Resource\+Parameter@{Try\+Get\+Resource\+Parameter}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Try\+Get\+Resource\+Parameter()}{TryGetResourceParameter()}}
+{\footnotesize\ttfamily static bool Try\+Get\+Resource\+Parameter (\begin{DoxyParamCaption}\item[{Api\+Description}]{api\+Description,  }\item[{Http\+Configuration}]{config,  }\item[{out Api\+Parameter\+Description}]{parameter\+Description,  }\item[{out Type}]{resource\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+\subsection{Atributos}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a04d4e06a2bc79e7cf9f3acb633928c3a}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1HelpPageConfigurationExtensions_a04d4e06a2bc79e7cf9f3acb633928c3a}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}!Api\+Model\+Prefix@{Api\+Model\+Prefix}}
+\index{Api\+Model\+Prefix@{Api\+Model\+Prefix}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Configuration\+Extensions}}
+\subsubsection{\texorpdfstring{Api\+Model\+Prefix}{ApiModelPrefix}}
+{\footnotesize\ttfamily const string Api\+Model\+Prefix = \char`\"{}M\+S\+\_\+\+Help\+Page\+Api\+Model\+\_\+\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte arquivo\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Bruno/\+Desktop/\+Api3\+Layers/\+Api3\+Layers/\+Areas/\+Help\+Page/\hyperlink{HelpPageConfigurationExtensions_8cs}{Help\+Page\+Configuration\+Extensions.\+cs}\end{DoxyCompactItemize}

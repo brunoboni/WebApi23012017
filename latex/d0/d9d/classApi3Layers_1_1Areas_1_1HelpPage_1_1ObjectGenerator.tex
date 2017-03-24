@@ -1,0 +1,191 @@
+\hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator}{}\section{Object\+Generator}
+\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator}\index{Object\+Generator@{Object\+Generator}}
+
+
+This class will create an object of a given type and populate it with sample data.  
+
+
+\subsection*{Componentes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_1_1SimpleTypeObjectGenerator}{Simple\+Type\+Object\+Generator}
+\end{DoxyCompactItemize}
+\subsection*{Métodos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+object \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a5a661e03cac6c900f73a7e9e6e2d205d}{Generate\+Object} (Type type)
+\begin{DoxyCompactList}\small\item\em Generates an object for a given type. The type needs to be public, have a public default constructor and settable public properties/fields. Currently it supports the following types\+: Simple types\+: int, string, Enum, Date\+Time, Uri, etc. Complex types\+: P\+O\+CO types. Nullables\+: Nullable$<$\+T$>$. Arrays\+: arrays of simple types or complex types. Key value pairs\+: Key\+Value\+Pair$<$\+T\+Key,\+T\+Value$>$ Tuples\+: Tuple$<$\+T1$>$, Tuple$<$\+T1,\+T2$>$, etc Dictionaries\+: I\+Dictionary$<$\+T\+Key,\+T\+Value$>$ or anything deriving from I\+Dictionary$<$\+T\+Key,\+T\+Value$>$. Collections\+: I\+List$<$\+T$>$, I\+Enumerable$<$\+T$>$, I\+Collection$<$\+T$>$, I\+List, I\+Enumerable, I\+Collection or anything deriving from I\+Collection$<$\+T$>$ or I\+List. Queryables\+: I\+Queryable, I\+Queryable$<$\+T$>$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos do Pacote}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a3a0bf0ea42e20330508a59994b0d081c}{Default\+Collection\+Size} = 2
+\end{DoxyCompactItemize}
+\subsection*{Métodos Privados}
+\begin{DoxyCompactItemize}
+\item 
+object \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a8eeb38d007adae0b9b5a217de0da094d}{Generate\+Object} (Type type, Dictionary$<$ Type, object $>$ created\+Object\+References)
+\end{DoxyCompactItemize}
+\subsection*{Métodos Privados Estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static object \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_ae308e6232f8912fc509c4e12501bdf87}{Generate\+Array} (Type array\+Type, int size, Dictionary$<$ Type, object $>$ created\+Object\+References)
+\item 
+static object \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_adc56bccebb641bb203bf37cc2ea7bcc1}{Generate\+Collection} (Type collection\+Type, int size, Dictionary$<$ Type, object $>$ created\+Object\+References)
+\item 
+static object \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a8fc9bddba4980a0e5042c92ac6013334}{Generate\+Complex\+Object} (Type type, Dictionary$<$ Type, object $>$ created\+Object\+References)
+\item 
+static object \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a7d56ab32a5d1fe08154e1800fee66b22}{Generate\+Dictionary} (Type dictionary\+Type, int size, Dictionary$<$ Type, object $>$ created\+Object\+References)
+\item 
+static object \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a1d8ea92abcba85302bc5575e056f3133}{Generate\+Enum} (Type enum\+Type)
+\item 
+static object \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a52bbcd61c7e14a2b935bea92cd8c3dea}{Generate\+Generic\+Type} (Type type, int collection\+Size, Dictionary$<$ Type, object $>$ created\+Object\+References)
+\item 
+static object \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a8f3d117002fab2265c2c6ec6262d5107}{Generate\+Key\+Value\+Pair} (Type key\+Value\+Pair\+Type, Dictionary$<$ Type, object $>$ created\+Object\+References)
+\item 
+static object \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a3becc3691d8e4b6ba3511d1e90dd9a2f}{Generate\+Nullable} (Type nullable\+Type, Dictionary$<$ Type, object $>$ created\+Object\+References)
+\item 
+static object \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_ae28b224868a4a0d541b607b41d6c7847}{Generate\+Queryable} (Type queryable\+Type, int size, Dictionary$<$ Type, object $>$ created\+Object\+References)
+\item 
+static object \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a13950cc161b6ba34b1fc38a05fe5ebfe}{Generate\+Tuple} (Type type, Dictionary$<$ Type, object $>$ created\+Object\+References)
+\item 
+static bool \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_aa0a1cd58178eb65521e3cc733dbd61b5}{Is\+Tuple} (Type generic\+Type\+Definition)
+\item 
+static void \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a0ae16743b5945dd748ee0cda2ff7938e}{Set\+Public\+Fields} (Type type, object obj, Dictionary$<$ Type, object $>$ created\+Object\+References)
+\item 
+static void \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_af71c066c5d2e37f52d0fe9cae1fb8d58}{Set\+Public\+Properties} (Type type, object obj, Dictionary$<$ Type, object $>$ created\+Object\+References)
+\end{DoxyCompactItemize}
+\subsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+readonly \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_1_1SimpleTypeObjectGenerator}{Simple\+Type\+Object\+Generator} \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_adf5706e3413d61502948d1da23f51f44}{Simple\+Object\+Generator} = new \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_1_1SimpleTypeObjectGenerator}{Simple\+Type\+Object\+Generator}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+This class will create an object of a given type and populate it with sample data. 
+
+
+
+\subsection{Métodos}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_ae308e6232f8912fc509c4e12501bdf87}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_ae308e6232f8912fc509c4e12501bdf87}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}!Generate\+Array@{Generate\+Array}}
+\index{Generate\+Array@{Generate\+Array}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}}
+\subsubsection{\texorpdfstring{Generate\+Array()}{GenerateArray()}}
+{\footnotesize\ttfamily static object Generate\+Array (\begin{DoxyParamCaption}\item[{Type}]{array\+Type,  }\item[{int}]{size,  }\item[{Dictionary$<$ Type, object $>$}]{created\+Object\+References }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_adc56bccebb641bb203bf37cc2ea7bcc1}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_adc56bccebb641bb203bf37cc2ea7bcc1}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}!Generate\+Collection@{Generate\+Collection}}
+\index{Generate\+Collection@{Generate\+Collection}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}}
+\subsubsection{\texorpdfstring{Generate\+Collection()}{GenerateCollection()}}
+{\footnotesize\ttfamily static object Generate\+Collection (\begin{DoxyParamCaption}\item[{Type}]{collection\+Type,  }\item[{int}]{size,  }\item[{Dictionary$<$ Type, object $>$}]{created\+Object\+References }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a8fc9bddba4980a0e5042c92ac6013334}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a8fc9bddba4980a0e5042c92ac6013334}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}!Generate\+Complex\+Object@{Generate\+Complex\+Object}}
+\index{Generate\+Complex\+Object@{Generate\+Complex\+Object}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}}
+\subsubsection{\texorpdfstring{Generate\+Complex\+Object()}{GenerateComplexObject()}}
+{\footnotesize\ttfamily static object Generate\+Complex\+Object (\begin{DoxyParamCaption}\item[{Type}]{type,  }\item[{Dictionary$<$ Type, object $>$}]{created\+Object\+References }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a7d56ab32a5d1fe08154e1800fee66b22}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a7d56ab32a5d1fe08154e1800fee66b22}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}!Generate\+Dictionary@{Generate\+Dictionary}}
+\index{Generate\+Dictionary@{Generate\+Dictionary}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}}
+\subsubsection{\texorpdfstring{Generate\+Dictionary()}{GenerateDictionary()}}
+{\footnotesize\ttfamily static object Generate\+Dictionary (\begin{DoxyParamCaption}\item[{Type}]{dictionary\+Type,  }\item[{int}]{size,  }\item[{Dictionary$<$ Type, object $>$}]{created\+Object\+References }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a1d8ea92abcba85302bc5575e056f3133}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a1d8ea92abcba85302bc5575e056f3133}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}!Generate\+Enum@{Generate\+Enum}}
+\index{Generate\+Enum@{Generate\+Enum}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}}
+\subsubsection{\texorpdfstring{Generate\+Enum()}{GenerateEnum()}}
+{\footnotesize\ttfamily static object Generate\+Enum (\begin{DoxyParamCaption}\item[{Type}]{enum\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a52bbcd61c7e14a2b935bea92cd8c3dea}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a52bbcd61c7e14a2b935bea92cd8c3dea}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}!Generate\+Generic\+Type@{Generate\+Generic\+Type}}
+\index{Generate\+Generic\+Type@{Generate\+Generic\+Type}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}}
+\subsubsection{\texorpdfstring{Generate\+Generic\+Type()}{GenerateGenericType()}}
+{\footnotesize\ttfamily static object Generate\+Generic\+Type (\begin{DoxyParamCaption}\item[{Type}]{type,  }\item[{int}]{collection\+Size,  }\item[{Dictionary$<$ Type, object $>$}]{created\+Object\+References }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a8f3d117002fab2265c2c6ec6262d5107}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a8f3d117002fab2265c2c6ec6262d5107}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}!Generate\+Key\+Value\+Pair@{Generate\+Key\+Value\+Pair}}
+\index{Generate\+Key\+Value\+Pair@{Generate\+Key\+Value\+Pair}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}}
+\subsubsection{\texorpdfstring{Generate\+Key\+Value\+Pair()}{GenerateKeyValuePair()}}
+{\footnotesize\ttfamily static object Generate\+Key\+Value\+Pair (\begin{DoxyParamCaption}\item[{Type}]{key\+Value\+Pair\+Type,  }\item[{Dictionary$<$ Type, object $>$}]{created\+Object\+References }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a3becc3691d8e4b6ba3511d1e90dd9a2f}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a3becc3691d8e4b6ba3511d1e90dd9a2f}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}!Generate\+Nullable@{Generate\+Nullable}}
+\index{Generate\+Nullable@{Generate\+Nullable}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}}
+\subsubsection{\texorpdfstring{Generate\+Nullable()}{GenerateNullable()}}
+{\footnotesize\ttfamily static object Generate\+Nullable (\begin{DoxyParamCaption}\item[{Type}]{nullable\+Type,  }\item[{Dictionary$<$ Type, object $>$}]{created\+Object\+References }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a5a661e03cac6c900f73a7e9e6e2d205d}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a5a661e03cac6c900f73a7e9e6e2d205d}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}!Generate\+Object@{Generate\+Object}}
+\index{Generate\+Object@{Generate\+Object}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}}
+\subsubsection{\texorpdfstring{Generate\+Object()}{GenerateObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily object Generate\+Object (\begin{DoxyParamCaption}\item[{Type}]{type }\end{DoxyParamCaption})}
+
+
+
+Generates an object for a given type. The type needs to be public, have a public default constructor and settable public properties/fields. Currently it supports the following types\+: Simple types\+: int, string, Enum, Date\+Time, Uri, etc. Complex types\+: P\+O\+CO types. Nullables\+: Nullable$<$\+T$>$. Arrays\+: arrays of simple types or complex types. Key value pairs\+: Key\+Value\+Pair$<$\+T\+Key,\+T\+Value$>$ Tuples\+: Tuple$<$\+T1$>$, Tuple$<$\+T1,\+T2$>$, etc Dictionaries\+: I\+Dictionary$<$\+T\+Key,\+T\+Value$>$ or anything deriving from I\+Dictionary$<$\+T\+Key,\+T\+Value$>$. Collections\+: I\+List$<$\+T$>$, I\+Enumerable$<$\+T$>$, I\+Collection$<$\+T$>$, I\+List, I\+Enumerable, I\+Collection or anything deriving from I\+Collection$<$\+T$>$ or I\+List. Queryables\+: I\+Queryable, I\+Queryable$<$\+T$>$. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em type} & The type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+An object of the given type.
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a8eeb38d007adae0b9b5a217de0da094d}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a8eeb38d007adae0b9b5a217de0da094d}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}!Generate\+Object@{Generate\+Object}}
+\index{Generate\+Object@{Generate\+Object}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}}
+\subsubsection{\texorpdfstring{Generate\+Object()}{GenerateObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily object Generate\+Object (\begin{DoxyParamCaption}\item[{Type}]{type,  }\item[{Dictionary$<$ Type, object $>$}]{created\+Object\+References }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_ae28b224868a4a0d541b607b41d6c7847}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_ae28b224868a4a0d541b607b41d6c7847}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}!Generate\+Queryable@{Generate\+Queryable}}
+\index{Generate\+Queryable@{Generate\+Queryable}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}}
+\subsubsection{\texorpdfstring{Generate\+Queryable()}{GenerateQueryable()}}
+{\footnotesize\ttfamily static object Generate\+Queryable (\begin{DoxyParamCaption}\item[{Type}]{queryable\+Type,  }\item[{int}]{size,  }\item[{Dictionary$<$ Type, object $>$}]{created\+Object\+References }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a13950cc161b6ba34b1fc38a05fe5ebfe}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a13950cc161b6ba34b1fc38a05fe5ebfe}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}!Generate\+Tuple@{Generate\+Tuple}}
+\index{Generate\+Tuple@{Generate\+Tuple}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}}
+\subsubsection{\texorpdfstring{Generate\+Tuple()}{GenerateTuple()}}
+{\footnotesize\ttfamily static object Generate\+Tuple (\begin{DoxyParamCaption}\item[{Type}]{type,  }\item[{Dictionary$<$ Type, object $>$}]{created\+Object\+References }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_aa0a1cd58178eb65521e3cc733dbd61b5}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_aa0a1cd58178eb65521e3cc733dbd61b5}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}!Is\+Tuple@{Is\+Tuple}}
+\index{Is\+Tuple@{Is\+Tuple}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}}
+\subsubsection{\texorpdfstring{Is\+Tuple()}{IsTuple()}}
+{\footnotesize\ttfamily static bool Is\+Tuple (\begin{DoxyParamCaption}\item[{Type}]{generic\+Type\+Definition }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a0ae16743b5945dd748ee0cda2ff7938e}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a0ae16743b5945dd748ee0cda2ff7938e}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}!Set\+Public\+Fields@{Set\+Public\+Fields}}
+\index{Set\+Public\+Fields@{Set\+Public\+Fields}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}}
+\subsubsection{\texorpdfstring{Set\+Public\+Fields()}{SetPublicFields()}}
+{\footnotesize\ttfamily static void Set\+Public\+Fields (\begin{DoxyParamCaption}\item[{Type}]{type,  }\item[{object}]{obj,  }\item[{Dictionary$<$ Type, object $>$}]{created\+Object\+References }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_af71c066c5d2e37f52d0fe9cae1fb8d58}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_af71c066c5d2e37f52d0fe9cae1fb8d58}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}!Set\+Public\+Properties@{Set\+Public\+Properties}}
+\index{Set\+Public\+Properties@{Set\+Public\+Properties}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}}
+\subsubsection{\texorpdfstring{Set\+Public\+Properties()}{SetPublicProperties()}}
+{\footnotesize\ttfamily static void Set\+Public\+Properties (\begin{DoxyParamCaption}\item[{Type}]{type,  }\item[{object}]{obj,  }\item[{Dictionary$<$ Type, object $>$}]{created\+Object\+References }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+\subsection{Atributos}
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a3a0bf0ea42e20330508a59994b0d081c}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_a3a0bf0ea42e20330508a59994b0d081c}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}!Default\+Collection\+Size@{Default\+Collection\+Size}}
+\index{Default\+Collection\+Size@{Default\+Collection\+Size}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}}
+\subsubsection{\texorpdfstring{Default\+Collection\+Size}{DefaultCollectionSize}}
+{\footnotesize\ttfamily const int Default\+Collection\+Size = 2\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_adf5706e3413d61502948d1da23f51f44}\label{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_adf5706e3413d61502948d1da23f51f44}} 
+\index{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}!Simple\+Object\+Generator@{Simple\+Object\+Generator}}
+\index{Simple\+Object\+Generator@{Simple\+Object\+Generator}!Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator@{Api3\+Layers\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}}
+\subsubsection{\texorpdfstring{Simple\+Object\+Generator}{SimpleObjectGenerator}}
+{\footnotesize\ttfamily readonly \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_1_1SimpleTypeObjectGenerator}{Simple\+Type\+Object\+Generator} Simple\+Object\+Generator = new \hyperlink{classApi3Layers_1_1Areas_1_1HelpPage_1_1ObjectGenerator_1_1SimpleTypeObjectGenerator}{Simple\+Type\+Object\+Generator}()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte arquivo\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Bruno/\+Desktop/\+Api3\+Layers/\+Api3\+Layers/\+Areas/\+Help\+Page/\+Sample\+Generation/\hyperlink{ObjectGenerator_8cs}{Object\+Generator.\+cs}\end{DoxyCompactItemize}
